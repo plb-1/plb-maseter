@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fafafa"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/myshoplist"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/PendingpaymentList"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="match_parent">
+            </ListView>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <CheckBox
+            android:text="全选"
+            android:id="@+id/ckdall"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/sumprice"
+            android:layout_marginLeft="5dp"
+            android:text="数量：200"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/delete3"
+            android:text="移除"
+            android:textColor="@color/white"
+            android:background="#ffa601"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/myshoplistimg"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/mylist_collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

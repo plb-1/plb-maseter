@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="zonghe">
+        <item>综合</item>
+        <item>销量</item>
+        <item>价格升序</item>
+        <item>价格降序</item>
+    </string-array>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/Details_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="1dp"
+            android:background="@color/Details_solid"
+            />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/tv"
+            android:textColor="@color/Details_text"
+            android:text="宝贝详情"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/Details_solid"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/details_shopname"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/detailslist"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp">
+            </ListView>
+            <ImageView
+                android:background="@mipmap/details"
+                android:layout_gravity="center"
+                android:id="@+id/shop_details_iv"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"/>
+            <ImageView
+                android:background="@mipmap/details2"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+            <ImageView
+                android:background="@mipmap/detail3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"/>
+            <ImageView
+                android:background="@mipmap/detail4"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"/>
+            <ImageView
+                android:background="@mipmap/detail5"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

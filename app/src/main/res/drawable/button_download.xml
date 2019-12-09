@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- This is the line -->
+    <item android:state_pressed="true" android:left="-1dp" android:top="-1dp"><!--被按下时-->
+        <shape android:shape="rectangle"><!--默认为矩形，可以设置为矩形（rectangle）、椭圆形(oval)、线性形状(line)、环形(ring)-->
+            <!-- <corners android:radius="0dp" />-->   <!--圆角-->
+            <stroke android:width="1dp" android:color="#00f2ff" />
+            <solid android:color="#dffdfc"/>       <!--内部填充色-->
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <stroke android:width="0.5dp" android:color="#0f9d58" />
+            <solid android:color="#ffffff"/>
+            <corners android:radius="3dip" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.plb.tdy.Detailedlist.StayPaymentFragment">
+
+    <ListView
+        android:id="@+id/lv_payment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp">
+
+        <View
+            android:id="@+id/line_head"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+
+        <CheckBox
+            android:id="@+id/all"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            style="@style/ck"/>
+
+        <TextView
+            android:id="@+id/selectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selectAll"
+            android:textColor="@color/gray"
+            android:layout_toRightOf="@id/all"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:layout_toRightOf="@id/selectAll"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/money"
+            android:layout_marginRight="6dp"/>
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥0"
+            android:textColor="@color/red"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/settlement"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/settlement"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:text="@string/settlement"
+            android:textColor="@color/white"
+            android:background="@color/orange"
+            android:textSize="18sp"/>
+
+        <View
+            android:id="@+id/line_bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

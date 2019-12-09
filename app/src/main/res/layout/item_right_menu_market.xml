@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_right_menu_market_text"
+    android:text=""
+    android:textSize="14sp"
+    android:textColor="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"/>

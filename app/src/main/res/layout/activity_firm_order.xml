@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.plb.activity.FirmOrder">
+    <RelativeLayout
+
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/orange"
+        android:layout_alignParentTop="true">
+        <ImageView
+
+            android:id="@+id/order_back"
+            android:layout_marginTop="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/back"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/firm_order"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"/>
+        />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/head"
+        android:layout_width="match_parent"
+        android:id="@+id/l1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginRight="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收货人:xxx"/>
+            <TextView
+                android:layout_marginLeft="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话:xxx"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/address"/>
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收货地址:xxx"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/l1"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+    </LinearLayout>
+        <ListView
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/l1"
+            android:id="@+id/firm_order_listview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_height">
+
+        </ListView>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/line_head"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+
+
+
+        <TextView
+           android:layout_centerHorizontal="true"
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/selectAll"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/fuhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="@color/red"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/total"/>
+        <TextView
+            android:id="@+id/firm_order_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/red"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/fuhao"/>
+
+        <Button
+            android:id="@+id/firm_order_settlement"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_centerVertical="true"
+            android:text="@string/settlement"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_settlement"/>
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_centerVertical="true"
+            android:text="@string/delete"
+            android:textColor="@color/red"
+            android:background="@drawable/btn_delete"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/line_bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+
+    </RelativeLayout>
+</RelativeLayout>

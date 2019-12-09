@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        style="@style/ck"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/adgn"
+        android:layout_toRightOf="@id/select" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="哇哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+        android:layout_toRightOf="@+id/img"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="28dp"/>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥9999.9"
+        android:textColor="@color/red"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"/>
+
+    <com.example.plb.widget.NumberAddSubView
+        android:id="@+id/numberAddSubView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:minValue="1"
+        android:layout_below="@id/info"
+        android:layout_toRightOf="@id/img"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp">
+
+    </com.example.plb.widget.NumberAddSubView>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">批零帮</string>
+    <string name="home">首页</string>
+    <string name="shop">店铺</string>
+    <string name="shopCart">购物车</string>
+    <string name="market1">五一市场</string>
+    <string name="market2">西园大市场</string>
+    <string name="personal">个人中心</string>
+    <string name="manager">管理</string>
+    <string name="complete">完成</string>
+    <string name="selectAll">全选</string>
+    <string name="settlement">结算</string>
+    <string name="total">合计：</string>
+    <string name="delete">删除</string>
+    <string name="firm_order">确认订单</string>
+    <string name="payment">付款详情</string>
+    <string name="order">订单详情</string>
+    <string name="myOrder">我的订单</string>
+    <string name="stayPayment">待付款</string>
+    <string name="hasPayment">已付款</string>
+    <string name="hasComplete">已完成</string>
+    <string name="title_activity_firm_order">FirmOrder</string>
+    <string name="shop_WandH">80dp</string>
+
+
+    <string name="good_count">x %d</string>
+    <string name="price">￥%s</string>
+    <string name="total_0">合计：￥0.00</string>
+    <string name="jiesuan_0">结算（0）</string>
+    <string name="jiesuan">结算（%s）</string>
+    <string name="cart_title_0">购物车(0)</string>
+    <string name="cart_title">购物车(%s)</string>
+
+
+
+    <string name="shopinfos">
+        伊利 高钙低脂奶 250ML*24盒 高钙低脂营养早餐纯牛奶
+        伊利 高钙低脂奶 250ML*24盒 高钙低脂营养早餐纯牛奶
+    </string>
+
+    <!--tdy-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

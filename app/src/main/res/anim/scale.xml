@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="100"
+    android:fillAfter="false"
+    android:fillBefore="true"
+    android:fromXScale="1.0"
+    android:fromYScale="1.0"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:repeatCount="0"
+    android:startOffset="0"
+    android:toXScale="1.2"
+    android:toYScale="1.2"/>
+<!--duration 动画运行时间-->
+<!--startOffset 动画开始时间-->
+<!--toXScale 放大倍数-->
+<!--android:fillAfter 动画结束之后是否保持动画的最终状态；true，表示保持动画的最终状态 -->
+<!--android:repeatCount 动画重复的次数。指定动画重复播放的次数，如果你需要无限循环播放，请填写一个小于0的数值，一般写-1-->
+<!--android:fillBefore 动画结束之后是否保持动画开始前的状态；true，表示恢复到动画开始前的状态-->
