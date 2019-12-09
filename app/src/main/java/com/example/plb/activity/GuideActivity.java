@@ -38,7 +38,7 @@ public class GuideActivity extends AppCompatActivity {
             }else if (msg.what==1){
                 i+=1;
                 if (i==6){
-                    startActivity(new Intent(GuideActivity.this,MainActivity.class));
+                    startActivity(new Intent(GuideActivity.this,LoginPageActivity.class));
                     handler.removeMessages(1);
                     finish();
                 }
@@ -50,7 +50,7 @@ public class GuideActivity extends AppCompatActivity {
     private class MyOnClickListener implements View.OnClickListener {
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(GuideActivity.this,MainActivity.class));
+            startActivity(new Intent(GuideActivity.this,LoginPageActivity.class));
             handler.removeMessages(1);
             finish();
         }
