@@ -52,7 +52,8 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_row="0"
-            android:layout_column="0">
+            android:layout_column="0"
+            android:padding="5dp">
             <ImageView
                 android:layout_width="17dp"
                 android:layout_height="17dp"
@@ -90,7 +91,8 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_row="3"
-            android:layout_column="0">
+            android:layout_column="0"
+            android:padding="5dp">
             <ImageView
                 android:layout_width="17dp"
                 android:layout_height="17dp"
@@ -128,7 +130,8 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_row="5"
-            android:layout_column="0">
+            android:layout_column="0"
+            android:padding="5dp">
             <ImageView
                 android:layout_width="17dp"
                 android:layout_height="17dp"
@@ -145,14 +148,31 @@
                 android:text="手机号码:"/>
             <EditText
                 android:id="@+id/reg_phone"
-                android:layout_width="match_parent"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:hint="请输入店铺老板手机号"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="10dp"
                 android:padding="4dp"
                 android:textSize="16sp"
-                android:background="@null"/>
+                android:background="@null"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/reg_yzcode_ll_bg"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="获取验证码"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
         </LinearLayout>
         <View
             android:layout_width="match_parent"
@@ -166,27 +186,28 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_row="7"
-            android:layout_column="0">
+            android:layout_column="0"
+            android:padding="5dp">
             <ImageView
-                android:layout_width="17dp"
-                android:layout_height="17dp"
+                android:layout_width="18.5dp"
+                android:layout_height="18.5dp"
                 android:layout_centerVertical="true"
                 android:layout_column="0"
                 android:layout_row="0"
-                android:src="@mipmap/login_phone"
+                android:src="@mipmap/reg_key"
                 android:layout_margin="5dp"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:text="手机号码:"/>
+                android:text="验证码:"/>
             <EditText
-                android:id="@+id/reg_phone"
+                android:id="@+id/reg_yzcode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="请输入店铺老板手机号"
-                android:layout_marginLeft="15dp"
+                android:hint="请输入验证码"
+                android:layout_marginLeft="30dp"
                 android:layout_marginRight="10dp"
                 android:padding="4dp"
                 android:textSize="16sp"
@@ -204,7 +225,8 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_row="9"
-            android:layout_column="0">
+            android:layout_column="0"
+            android:padding="5dp">
             <ImageView
                 android:layout_width="18dp"
                 android:layout_height="18dp"
@@ -236,13 +258,47 @@
             android:background="#e6e6e6"
             android:layout_row="10"
             android:layout_column="0"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_row="11"
+            android:layout_column="0"
+            android:padding="5dp">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:src="@mipmap/pwd"
+                android:layout_margin="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="密码:"/>
+            <EditText
+                android:id="@+id/reg_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="密码（6-20位）"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:padding="4dp"
+                android:textSize="16sp"
+                android:background="@null"/>
+        </LinearLayout>
     </GridLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/reg_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -254,7 +310,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="我已阅读并同意"
-            android:textSize="13sp"/>
+            android:textSize="13sp"
+            android:textColor="@color/login_text_gray"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -186,7 +186,8 @@
             android:layout_height="wrap_content"
             android:text="Copyright@2014-2016湖南博宇互联网Inc.All"
             android:textSize="12sp"
-            android:layout_marginBottom="10dp"/>
+            android:textColor="@color/login_text_gray"
+            android:layout_marginBottom="10dp" />
 
     </RelativeLayout>
 
