@@ -43,7 +43,7 @@
         android:layout_marginTop="10dp"
         android:background="#fff"
         android:columnCount="1"
-        android:rowCount="9"
+        android:rowCount="13"
         app:layout_constraintTop_toBottomOf="@+id/registered_top">
 
         <LinearLayout
@@ -168,6 +168,44 @@
             android:layout_row="7"
             android:layout_column="0">
             <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:src="@mipmap/login_phone"
+                android:layout_margin="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="手机号码:"/>
+            <EditText
+                android:id="@+id/reg_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入店铺老板手机号"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:padding="4dp"
+                android:textSize="16sp"
+                android:background="@null"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e6e6e6"
+            android:layout_row="8"
+            android:layout_column="0"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_row="9"
+            android:layout_column="0">
+            <ImageView
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:layout_centerVertical="true"
@@ -196,7 +234,7 @@
             android:layout_width="match_parent"
             android:layout_height="1px"
             android:background="#e6e6e6"
-            android:layout_row="8"
+            android:layout_row="10"
             android:layout_column="0"/>
     </GridLayout>
     <LinearLayout
@@ -215,7 +253,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="我已阅读并同意"/>
+            android:text="我已阅读并同意"
+            android:textSize="13sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

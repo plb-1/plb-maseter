@@ -16,10 +16,12 @@
         android:theme="@style/AppTheme">
        <activity
             android:name=".activity.MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+           android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.GuideActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,33 +30,41 @@
         </activity>
         <activity
             android:name=".activity.FirmOrder"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.DetailsActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity android:name=".activity.PersonalActivity" />
         <activity
             android:name=".activity.OrderActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.SettingActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.LoginPageActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".activity.commodity" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.commodity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.RegisteredActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".activity.StoreCertificationActivity" />
-        <activity android:name=".activity.ProductInfoActivity" />
-        <activity android:name=".activity.InformationActivity" />
-        <activity android:name=".tdy.Detailedlist.tdy_daifukuan" />
-        <activity android:name=".tdy.Detailedlist.tdy_yifukuan" />
-        <activity android:name=".tdy.Detailedlist.tdy_yiwanchen" />
-        <activity android:name=".activity.mylistActivity" />
-        <activity android:name=".activity.ServiceCentre" />
-        <activity android:name=".activity.messages"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.StoreCertificationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ProductInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.InformationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".tdy.Detailedlist.tdy_daifukuan" android:screenOrientation="portrait"/>
+        <activity android:name=".tdy.Detailedlist.tdy_yifukuan" android:screenOrientation="portrait"/>
+        <activity android:name=".tdy.Detailedlist.tdy_yiwanchen" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.mylistActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ServiceCentre" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.messages" android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
