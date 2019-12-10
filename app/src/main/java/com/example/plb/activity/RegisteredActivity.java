@@ -20,21 +20,21 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
     }
 
     private void init() {
-        tv_registered = findViewById(R.id.tv_registered);
-        forget_password = findViewById(R.id.forget_password);
-        tv_registered.setOnClickListener(this);
-        forget_password.setOnClickListener(this);
+//        tv_registered = findViewById(R.id.tv_registered);
+//        forget_password = findViewById(R.id.forget_password);
+//        tv_registered.setOnClickListener(this);
+//        forget_password.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.tv_registered:
-                startActivity(new Intent(RegisteredActivity.this, StoreCertificationActivity.class));
-                break;
-            case R.id.forget_password:
-                finish();
-                break;
+//            case R.id.tv_registered:
+//                startActivity(new Intent(RegisteredActivity.this, StoreCertificationActivity.class));
+//                break;
+//            case R.id.forget_password:
+//                finish();
+//                break;
         }
     }
 
