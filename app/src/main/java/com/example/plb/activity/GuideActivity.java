@@ -1,5 +1,6 @@
 package com.example.plb.activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,7 +13,7 @@ import android.widget.Button;
 import com.example.plb.activity.MainActivity;
 import com.example.plb.R;
 
-public class GuideActivity extends AppCompatActivity {
+public class GuideActivity extends Activity {
     private Button jump;
     private int j=5,i=0;
     @Override
@@ -50,7 +51,7 @@ public class GuideActivity extends AppCompatActivity {
     private class MyOnClickListener implements View.OnClickListener {
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(GuideActivity.this,LoginPageActivity.class));
+            startActivity(new Intent(GuideActivity.this,MainActivity.class));
             handler.removeMessages(1);
             finish();
         }
