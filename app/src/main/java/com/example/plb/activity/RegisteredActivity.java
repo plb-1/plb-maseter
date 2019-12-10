@@ -10,7 +10,6 @@ import com.example.plb.R;
 
 public class RegisteredActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private TextView tv_registered, forget_password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +19,6 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
     }
 
     private void init() {
-//        tv_registered = findViewById(R.id.tv_registered);
-//        forget_password = findViewById(R.id.forget_password);
-//        tv_registered.setOnClickListener(this);
-//        forget_password.setOnClickListener(this);
     }
 
     @Override
