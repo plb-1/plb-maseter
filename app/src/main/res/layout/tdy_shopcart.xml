@@ -11,7 +11,7 @@
         android:id="@+id/id_rl_cart_is_empty"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FCFCFC"
+        android:background="#F5F5F5"
         android:gravity="center"
         android:layout_marginTop="48dp"
         android:visibility="gone">
@@ -21,14 +21,14 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:background="@mipmap/weifukuan"/>
-        <TextView
+        <!--<TextView
             android:id="@+id/id_rl_cart_is_empty_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/id_rl_cart_is_empty_image"
             android:layout_marginTop="10dp"
-            android:text="购物车为空"/>
+            android:text="购物车为空"/>-->
     </RelativeLayout>
 
     <!--android:background="@mipmap/channel_expandablelistview_bg"
