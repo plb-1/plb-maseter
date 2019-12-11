@@ -12,6 +12,12 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.plb.R;
+import com.example.plb.Utils.NetWorkUtils;
+
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
 
 public class LoginPageActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -87,6 +93,12 @@ public class LoginPageActivity extends AppCompatActivity implements View.OnClick
         switch (v.getId()){
             case R.id.registered:
                 startActivity(new Intent(LoginPageActivity.this, RegisteredActivity.class));
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        NetWorkUtils.post("","{}");
+                    }
+                }).start();
                 break;
 
         }
