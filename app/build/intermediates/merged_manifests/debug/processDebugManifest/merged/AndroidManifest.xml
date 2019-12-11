@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="21"
+        android:minSdkVersion="22"
         android:targetSdkVersion="28" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -25,9 +25,11 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.plb.activity.MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.example.plb.activity.GuideActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,33 +39,59 @@
         </activity>
         <activity
             android:name="com.example.plb.activity.FirmOrder"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.example.plb.activity.DetailsActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name="com.example.plb.activity.PersonalActivity" />
         <activity
             android:name="com.example.plb.activity.OrderActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.example.plb.activity.SettingActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.example.plb.activity.LoginPageActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name="com.example.plb.activity.commodity" />
+        <activity
+            android:name="com.example.plb.activity.commodity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.plb.activity.RegisteredActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name="com.example.plb.activity.StoreCertificationActivity" />
-        <activity android:name="com.example.plb.activity.ProductInfoActivity" />
-        <activity android:name="com.example.plb.activity.InformationActivity" />
-        <activity android:name="com.example.plb.tdy.Detailedlist.tdy_daifukuan" />
-        <activity android:name="com.example.plb.tdy.Detailedlist.tdy_yifukuan" />
-        <activity android:name="com.example.plb.tdy.Detailedlist.tdy_yiwanchen" />
-        <activity android:name="com.example.plb.activity.mylistActivity" />
-        <activity android:name="com.example.plb.activity.ServiceCentre" />
-        <activity android:name="com.example.plb.activity.messages" />
+        <activity
+            android:name="com.example.plb.activity.StoreCertificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.plb.activity.ProductInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.plb.activity.InformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.plb.tdy.Detailedlist.tdy_daifukuan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.plb.tdy.Detailedlist.tdy_yifukuan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.plb.tdy.Detailedlist.tdy_yiwanchen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.plb.activity.mylistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.plb.activity.ServiceCentre"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.plb.activity.messages"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

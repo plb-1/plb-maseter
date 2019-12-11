@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/PLT-master.iml" filepath="$PROJECT_DIR$/PLT-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/plb-maseter.iml" filepath="$PROJECT_DIR$/plb-maseter.iml" />
     </modules>
   </component>
 </project>
