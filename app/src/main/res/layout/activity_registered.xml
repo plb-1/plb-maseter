@@ -51,45 +51,6 @@
             android:layout_height="55dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:padding="5dp">
-            <ImageView
-                android:layout_width="17dp"
-                android:layout_height="17dp"
-                android:layout_centerVertical="true"
-                android:layout_column="0"
-                android:layout_row="0"
-                android:src="@mipmap/reg_store"
-                android:layout_margin="5dp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="店铺名字:"/>
-            <EditText
-                android:id="@+id/reg_store"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="请输入店铺名字"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"
-                android:padding="4dp"
-                android:textSize="16sp"
-                android:background="@null"/>
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:background="#e6e6e6"
-            android:layout_row="1"
-            android:layout_column="0"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
             android:layout_row="3"
             android:layout_column="0"
             android:padding="5dp">
@@ -158,6 +119,7 @@
                 android:background="@null"
                 android:layout_weight="1"/>
             <LinearLayout
+                android:id="@+id/reg_yzcode_btn"
                 android:layout_width="75dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/reg_yzcode_ll_bg"
@@ -224,45 +186,6 @@
             android:layout_height="55dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_row="9"
-            android:layout_column="0"
-            android:padding="5dp">
-            <ImageView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:layout_centerVertical="true"
-                android:layout_column="0"
-                android:layout_row="0"
-                android:src="@mipmap/reg_position"
-                android:layout_margin="5dp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="店铺位置:"/>
-            <EditText
-                android:id="@+id/reg_position"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="请输入店铺位置"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"
-                android:padding="4dp"
-                android:textSize="16sp"
-                android:background="@null"/>
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:background="#e6e6e6"
-            android:layout_row="10"
-            android:layout_column="0"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
             android:layout_row="11"
             android:layout_column="0"
             android:padding="5dp">
@@ -300,6 +223,7 @@
         android:layout_marginTop="10dp"
         android:padding="5dp">
         <CheckBox
+            android:id="@+id/reg_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleX="0.85"

@@ -6,20 +6,27 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.plb.R;
 
-public class RegisteredActivity extends AppCompatActivity implements View.OnClickListener{
+public class RegisteredActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    private EditText regStore;
     private EditText regAccount;
     private EditText regPhone;
-    private EditText regPosition;
     private RelativeLayout regBtn;
+    private LinearLayout regYzcodeBtn;
+    private EditText regYzcode;
+    private EditText regPwd;
+    private CheckBox regCheckbox;
+    private ImageView exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,26 +37,6 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
     }
 
     private void initEven() {
-        regStore.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                if (s.toString().length()!=0&& !"".equals(s)) {
-                    regBtn.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                }else {
-                    regBtn.setBackgroundColor(getResources().getColor(R.color.login_btn_gray));
-                }
-            }
-        });
         regAccount.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -63,9 +50,9 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
 
             @Override
             public void afterTextChanged(Editable s) {
-                if (s.toString().length()!=0&& !"".equals(s)) {
+                if (s.toString().length() != 0 && !"".equals(s)) {
                     regBtn.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                }else {
+                } else {
                     regBtn.setBackgroundColor(getResources().getColor(R.color.login_btn_gray));
                 }
             }
@@ -83,29 +70,9 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
 
             @Override
             public void afterTextChanged(Editable s) {
-                if (s.toString().length()!=0&& !"".equals(s)) {
+                if (s.toString().length() != 0 && !"".equals(s)) {
                     regBtn.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                }else {
-                    regBtn.setBackgroundColor(getResources().getColor(R.color.login_btn_gray));
-                }
-            }
-        });
-        regPosition.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                if (s.toString().length()!=0&& !"".equals(s)) {
-                    regBtn.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                }else {
+                } else {
                     regBtn.setBackgroundColor(getResources().getColor(R.color.login_btn_gray));
                 }
             }
@@ -113,23 +80,43 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
     }
 
     private void initView() {
-        regStore = findViewById(R.id.reg_store);//店铺输入框
         regAccount = findViewById(R.id.reg_account);//店铺老板姓名输入框
         regPhone = findViewById(R.id.reg_phone);//店铺老板电话号码输入框
-        regPosition = findViewById(R.id.reg_position);//店铺位置
+        regYzcode = findViewById(R.id.reg_yzcode);//验证码输入框
+        regPwd = findViewById(R.id.reg_pwd);//密码输入框
 
-        regBtn = findViewById(R.id.reg_btn);
+        regYzcodeBtn = findViewById(R.id.reg_yzcode_btn);//手机验证码按钮
+        regYzcodeBtn.setOnClickListener(this);
+
+        regCheckbox = findViewById(R.id.reg_checkbox);//是否同意用户许可
+
+        exit = findViewById(R.id.exit);//返回按钮
+        exit.setOnClickListener(this);
+
+        regBtn = findViewById(R.id.reg_btn);//登录按钮
+        regBtn.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-//            case R.id.tv_registered:
-//                startActivity(new Intent(RegisteredActivity.this, StoreCertificationActivity.class));
-//                break;
-//            case R.id.forget_password:
-//                finish();
-//                break;
+        switch (v.getId()) {
+            case R.id.exit:
+                finish();
+                break;
+            case R.id.reg_btn:
+                if (regCheckbox.isChecked()) {
+                    if (regAccount.getText().length() > 0 && regPhone.getText().length() > 0 && regYzcode.getText().length() > 0 &&
+                            regPwd.getText().length() > 0) {
+
+                    } else {
+                        Toast.makeText(RegisteredActivity.this, "请先输入注册信息", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(RegisteredActivity.this, "请先同意用户许可", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case R.id.reg_yzcode_btn:
+                break;
         }
     }
 
