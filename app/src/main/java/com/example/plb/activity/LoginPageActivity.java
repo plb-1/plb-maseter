@@ -95,6 +95,10 @@ public class LoginPageActivity extends AppCompatActivity implements View.OnClick
             case R.id.login_loginbtn:
                 if (loginUser.getText().length() > 0 && loginPassword.getText().length() > 0
                         && !"".equals(loginUser.getText().toString()) && !"".equals(loginPassword.getText().toString())) {
+
+                    //登录成功
+                    loginUser.setText("");
+                    loginPassword.setText("");
                     startActivity(new Intent(LoginPageActivity.this, MainActivity.class));
                 } else {
                     Toast.makeText(LoginPageActivity.this, "请输入用户名，密码", Toast.LENGTH_SHORT).show();
