@@ -10,16 +10,13 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.plb.R;
 import com.example.plb.Utils.NetWorkUtils;
 
-import okhttp3.MediaType;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
 
-public class LoginPageActivity extends AppCompatActivity implements View.OnClickListener{
+public class LoginPageActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView registered;
     private EditText loginUser;
@@ -42,9 +39,10 @@ public class LoginPageActivity extends AppCompatActivity implements View.OnClick
         loginLoginbtn = findViewById(R.id.login_loginbtn);//登录按钮
 
         registered.setOnClickListener(this);
+        loginLoginbtn.setOnClickListener(this);
     }
 
-    public void initEven(){
+    public void initEven() {
         loginUser.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -58,9 +56,9 @@ public class LoginPageActivity extends AppCompatActivity implements View.OnClick
 
             @Override
             public void afterTextChanged(Editable s) {
-                if (s.toString().length()!=0&& !"".equals(s)) {
+                if (s.toString().length() != 0 && !"".equals(s)) {
                     loginLoginbtn.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                }else {
+                } else {
                     loginLoginbtn.setBackgroundColor(getResources().getColor(R.color.login_btn_gray));
                 }
             }
@@ -79,9 +77,9 @@ public class LoginPageActivity extends AppCompatActivity implements View.OnClick
 
             @Override
             public void afterTextChanged(Editable s) {
-                if (s.toString().length()!=0&& !"".equals(s)) {
+                if (s.toString().length() != 0 && !"".equals(s)) {
                     loginLoginbtn.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                }else {
+                } else {
                     loginLoginbtn.setBackgroundColor(getResources().getColor(R.color.login_btn_gray));
                 }
             }
@@ -90,15 +88,17 @@ public class LoginPageActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.registered:
                 startActivity(new Intent(LoginPageActivity.this, RegisteredActivity.class));
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        NetWorkUtils.post("","{}");
-                    }
-                }).start();
+                break;
+            case R.id.login_loginbtn:
+                if (loginUser.getText().length() > 0 && loginPassword.getText().length() > 0
+                        && !"".equals(loginUser.getText().toString()) && !"".equals(loginPassword.getText().toString())) {
+                    startActivity(new Intent(LoginPageActivity.this, MainActivity.class));
+                } else {
+                    Toast.makeText(LoginPageActivity.this, "请输入用户名，密码", Toast.LENGTH_SHORT).show();
+                }
                 break;
 
         }

@@ -939,6 +939,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable reg_yzcode_ll_bg
+drawable reg_yzcode_ll_gray_bg
 drawable search_home
 drawable selector_icon_home
 drawable selector_icon_personal
