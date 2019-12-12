@@ -25,6 +25,7 @@
         <CheckBox
             android:text="全选"
             android:id="@+id/ckdall"
+            android:theme="@style/MyCheckBox"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent" />

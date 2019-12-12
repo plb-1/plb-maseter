@@ -12,6 +12,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Path;
 import android.graphics.PathMeasure;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,6 +32,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.plb.R;
+import com.example.plb.adapter.DetailAdapter;
 import com.example.plb.bean.ShopBean;
 import com.example.plb.database.ShopDatabase;
 import com.example.plb.fragment.DetailsShopFragment;
@@ -65,8 +68,8 @@ public class AddShopPopupwindow extends PopupWindow{
     private ImageView shopcaricon;
     private TextView shopconunt;
     private long ll;
-    DetailsShopFragment ds = new DetailsShopFragment ();
-    int i =ds.minNum,mycount = 0;
+    //DetailsShopFragment ds = new DetailsShopFragment ();
+    int i = DetailAdapter.DetailsShopFragments.minNum,mycount = 0;
 
 
 
@@ -77,6 +80,7 @@ public class AddShopPopupwindow extends PopupWindow{
     private SQLiteDatabase db = null;
     List<shopinfos> list;
 
+    @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
     public AddShopPopupwindow(Activity context, View.OnClickListener itemsOnClick){
         super(context);
         initView(context, itemsOnClick);
@@ -84,6 +88,7 @@ public class AddShopPopupwindow extends PopupWindow{
 
     /*TDY*/
     /*TDY*/
+    @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
     private void initView(final Activity context, View.OnClickListener itemsOnClick) {
         LayoutInflater mInflater = (LayoutInflater) context.getSystemService( Context.LAYOUT_INFLATER_SERVICE);
         view = mInflater.inflate(R.layout.layout_addshop, null);
@@ -97,6 +102,7 @@ public class AddShopPopupwindow extends PopupWindow{
         selectShopCount();
         /*end tdy*/
         add_btn.setOnClickListener ( new View.OnClickListener () {
+            @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
             @Override
             public void onClick(View v) {
                 addGoodToCar(shop_img);
@@ -154,6 +160,7 @@ public class AddShopPopupwindow extends PopupWindow{
 
 
 
+    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
     private void addGoodToCar(ImageView imageView){
         final ImageView view = new ImageView(view2.getContext());
         view.setImageDrawable(imageView.getDrawable());
@@ -256,10 +263,10 @@ public class AddShopPopupwindow extends PopupWindow{
     private void addShop(){
         SQLiteDatabase db = helper.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(Constant.NAME,ds.info);//商品名称
+        values.put(Constant.NAME,DetailAdapter.DetailsShopFragments.info);//商品名称
         values.put(Constant.SHOPIMG,R.mipmap.example_1);//图片地址
         values.put(Constant.SHOPBUYNUM,i);//购买数量
-        values.put(Constant.SHOPPRICE,ds.wholesalePrice);//商品单价
+        values.put(Constant.SHOPPRICE,DetailAdapter.DetailsShopFragments.wholesalePrice);//商品单价
         values.put(Constant.DELIVERYSTATUS,1);//发货状态
         values.put(Constant.ISPAYMENT,1);//交易状态
         long result=db.insert(Constant.TABLE_NAME,null,values);
@@ -301,14 +308,14 @@ public class AddShopPopupwindow extends PopupWindow{
 
 
     private void initData() {
-        Glide.with ( view.getContext () ).load ( ds.image ).into ( shop_img );
-        shop_name.setText ( ds.info+"" );
-        shop_beginSum.setText ( ds.minNum +""+ds.unit+"起批");
-        shop_Price.setText (ds.wholesalePrice+"" );
-        shop_Num.setText( ds.stocks +""+ds.unit+"可售");
-        shop_Sum.setText ( ds.minNum+"" );
-        num_tv.setText ( "共"+ds.minNum+"箱" );
-        money_tv.setText ( "￥"+ds.minNum*ds.wholesalePrice );
+        Glide.with ( view.getContext () ).load ( DetailAdapter.DetailsShopFragments.image ).into ( shop_img );
+        shop_name.setText ( DetailAdapter.DetailsShopFragments.info+"" );
+        shop_beginSum.setText ( DetailAdapter.DetailsShopFragments.minNum +""+DetailAdapter.DetailsShopFragments.unit+"起批");
+        shop_Price.setText (DetailAdapter.DetailsShopFragments.wholesalePrice+"" );
+        shop_Num.setText( DetailAdapter.DetailsShopFragments.stocks +""+DetailAdapter.DetailsShopFragments.unit+"可售");
+        shop_Sum.setText ( DetailAdapter.DetailsShopFragments.minNum+"" );
+        num_tv.setText ( "共"+DetailAdapter.DetailsShopFragments.minNum+"箱" );
+        money_tv.setText ( "￥"+DetailAdapter.DetailsShopFragments.minNum * DetailAdapter.DetailsShopFragments.wholesalePrice );
     }
 
     /**
@@ -348,26 +355,26 @@ public class AddShopPopupwindow extends PopupWindow{
         public void onClick(View v) {
             switch (v.getId ()){
                 case R.id.add_shopNum:
-                    if(i>ds.stocks-1){
-                        Toast.makeText ( view.getContext (),"商品最大售量为"+ds.stocks+""+ds.unit+"~",Toast.LENGTH_SHORT ).show ();
+                    if(i>DetailAdapter.DetailsShopFragments.stocks-1){
+                        Toast.makeText ( view.getContext (),"商品最大售量为"+DetailAdapter.DetailsShopFragments.stocks+""+DetailAdapter.DetailsShopFragments.unit+"~",Toast.LENGTH_SHORT ).show ();
                     }else {
                         i++;
                     }
-                    BigDecimal BD = new BigDecimal(i*ds.wholesalePrice);
+                    BigDecimal BD = new BigDecimal(i*DetailAdapter.DetailsShopFragments.wholesalePrice);
                     BigDecimal resultBD = BD.setScale(2, java.math.BigDecimal.ROUND_HALF_UP);
                     shop_Sum.setText ( i+"" );
                     money_tv.setText ( "￥"+resultBD );
                     num_tv.setText ("共"+i+"箱" );
                     break;
                 case R.id.delete_shopNum:
-                    if (i<ds.minNum+1){
-                        Toast.makeText ( view.getContext (),"商品最少起售为"+ds.minNum+""+ds.unit+"~",Toast.LENGTH_SHORT ).show ();
+                    if (i<DetailAdapter.DetailsShopFragments.minNum+1){
+                        Toast.makeText ( view.getContext (),"商品最少起售为"+DetailAdapter.DetailsShopFragments.minNum+""+DetailAdapter.DetailsShopFragments.unit+"~",Toast.LENGTH_SHORT ).show ();
                     }else {
                         i--;
                     }
                     shop_Sum.setText ( i+"" );
                     num_tv.setText ( "共"+i+"箱" );
-                    BigDecimal BDL = new BigDecimal(i*ds.wholesalePrice);
+                    BigDecimal BDL = new BigDecimal(i*DetailAdapter.DetailsShopFragments.wholesalePrice);
                     BigDecimal resultBDL = BDL.setScale(2, java.math.BigDecimal.ROUND_HALF_UP);
                     money_tv.setText ( "￥"+resultBDL);
                     break;

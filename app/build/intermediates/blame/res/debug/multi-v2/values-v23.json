@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\cfw\\Desktop\\plb-maseter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\cfw\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\d97b69690b495da61a7f9c660667917a\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
