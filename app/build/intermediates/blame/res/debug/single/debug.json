@@ -8,12 +8,12 @@
         "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_baoyu.jpg.flat",
-        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-hdpi\\baoyu.jpg"
-    },
-    {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_baoyu.jpg.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-hdpi\\baoyu.jpg"
     },
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_type_back.png.flat",
@@ -24,16 +24,16 @@
         "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-hdpi\\yiner.jpg"
     },
     {
-        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_search_home.png.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-mdpi\\search_home.png"
     },
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_search_home.png.flat",
-        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-mdpi\\search_home.png"
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -110,6 +110,10 @@
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_xiala.png.flat",
         "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-mdpi\\xiala.png"
+    },
+    {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_gengduoa.png.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-hdpi\\gengduoa.png"
     },
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -268,12 +272,20 @@
         "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_fanhuia.png.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-hdpi\\fanhuia.png"
+    },
+    {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\e392b0019431f807cf8a4b2d0a1817d7\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_obligation.png.flat",
         "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-mdpi\\obligation.png"
+    },
+    {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_order.png.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-hdpi\\order.png"
     },
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_adg.jpg.flat",
@@ -708,6 +720,10 @@
         "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_fanhuia1.png.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-hdpi\\fanhuia1.png"
+    },
+    {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_head_1.png.flat",
         "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-hdpi\\head_1.png"
     },
@@ -762,6 +778,10 @@
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_paid.png.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-hdpi\\paid.png"
     },
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_delete.xml.flat",
@@ -1214,6 +1234,10 @@
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_completed.png.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-hdpi\\completed.png"
     },
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_search_api_material.xml.flat",
@@ -2064,6 +2088,10 @@
         "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-mdpi\\wd.jpg"
     },
     {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_gerenbeijing.jpeg.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-hdpi\\gerenbeijing.jpeg"
+    },
+    {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_location_gray.png.flat",
         "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-mdpi\\location_gray.png"
     },
@@ -2416,12 +2444,12 @@
         "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_logo.png.flat",
-        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-xhdpi\\logo.png"
-    },
-    {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_reg_yzcode_ll_gray_bg.xml.flat",
         "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\drawable\\reg_yzcode_ll_gray_bg.xml"
+    },
+    {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_logo.png.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-xhdpi\\logo.png"
     },
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_completed.png.flat",
@@ -2550,6 +2578,10 @@
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_selector_icon_shop.xml.flat",
         "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\drawable\\selector_icon_shop.xml"
+    },
+    {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_touxianga.png.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-hdpi\\touxianga.png"
     },
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
