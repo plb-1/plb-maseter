@@ -1290,6 +1290,7 @@ id reg_account
 id reg_btn
 id reg_checkbox
 id reg_content
+id reg_ok_pwd
 id reg_phone
 id reg_pwd
 id reg_yzcode

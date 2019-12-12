@@ -8,12 +8,12 @@
         "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
-        "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
-    },
-    {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_baoyu.jpg.flat",
         "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-hdpi\\baoyu.jpg"
+    },
+    {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_type_back.png.flat",

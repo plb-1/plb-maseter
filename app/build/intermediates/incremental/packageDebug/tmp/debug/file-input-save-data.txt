@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Dec 11 19:51:46 CST 2019
+#Thu Dec 12 18:35:52 CST 2019
 1.base=E\:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY
