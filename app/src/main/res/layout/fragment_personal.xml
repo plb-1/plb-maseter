@@ -6,6 +6,34 @@
     android:gravity="center_horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="#FFF"
+    >
+    <ImageView
+      android:layout_gravity="center"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:src="@mipmap/fanhuia"
+      />
+    <TextView
+      android:layout_width="320dp"
+      android:layout_height="match_parent"
+      android:text="会员中心"
+      android:gravity="center"
+      android:textSize="25sp"
+      android:textColor="#000"
+      android:textStyle="bold"
+      />
+    <ImageView
+      android:layout_gravity="center"
+      android:layout_width="40dp"
+      android:layout_height="30dp"
+      android:src="@mipmap/gengduoa"
+      />
+  </LinearLayout>
     <android.support.v4.widget.NestedScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -16,246 +44,174 @@
                 android:id="@+id/id_LinearLayout_1"
                 android:gravity="center_horizontal"
                 android:layout_width="match_parent"
-                android:background="@mipmap/bgimg_1"
+                android:background="@mipmap/gerenbeijing"
                 android:orientation="vertical"
-                android:layout_height="260dp">
+                android:layout_height="200dp">
                 <com.example.plb.tdy.custom.RoundImageView
                     android:id="@+id/rl_subscription"
                     android:layout_marginTop="50dp"
                     android:layout_width="90dp"
                     android:scaleType="fitXY"
                     app:type="circle"
-                    android:src="@mipmap/tou_xaing"
+                  android:src="@mipmap/touxianga"
                     android:layout_height="90dp" />
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:textSize="@dimen/size_16"
-                    android:textColor="#fff"
-                    android:text="Name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
             </LinearLayout>
+          <LinearLayout
+            android:layout_below="@id/id_LinearLayout_1"
+            android:id="@+id/id_LinearLayout_2"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <LinearLayout
-                android:layout_below="@id/id_LinearLayout_1"
-                android:id="@+id/id_LinearLayout_2"
-                android:background="#fff"
-                android:orientation="horizontal"
-                android:paddingTop="15dp"
+              android:id="@+id/rl_dataManagement"
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+              android:orientation="horizontal"
+              >
+              <ImageButton
+                android:layout_width="51dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/drawable_selector2"
+                android:scaleType="centerInside"
+                android:src="@mipmap/xinxi" />
+              <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="320dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="个人信息"
+                android:textSize="20sp"
+                android:textColor="#000"
+                />
+              <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageButton
-                    android:paddingBottom="5dp"
-                    android:paddingTop="5dp"
-                    android:scaleType="centerInside"
-                    android:background="@drawable/drawable_selector2"
-                    android:src="@mipmap/obligation"
-                    android:layout_weight="1"
-                    android:id="@+id/id_Pending_payment"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp" />
-                <ImageButton
-                    android:paddingBottom="5dp"
-                    android:paddingTop="5dp"
-                    android:scaleType="centerInside"
-                    android:background="@drawable/drawable_selector2"
-                    android:src="@mipmap/paid"
-                    android:layout_weight="1"
-                    android:id="@+id/id_Bypayment"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp" />
-                <ImageButton
-                    android:paddingBottom="5dp"
-                    android:paddingTop="5dp"
-                    android:scaleType="centerInside"
-                    android:background="@drawable/drawable_selector2"
-                    android:src="@mipmap/completed"
-                    android:layout_weight="1"
-                    android:id="@+id/ordertocomplete"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp" />
-                <ImageButton
-                    android:id="@+id/rl_myOrder"
-                    android:paddingBottom="5dp"
-                    android:paddingTop="5dp"
-                    android:scaleType="centerInside"
-                    android:background="@drawable/drawable_selector2"
-                    android:src="@mipmap/order"
-                    android:layout_weight="1"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp" />
+                android:layout_height="30dp"
+                android:src="@mipmap/fanhuia1"
+                android:layout_gravity="center"
+                />
             </LinearLayout>
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#96CDCD"
+              />
             <LinearLayout
-                android:layout_below="@id/id_LinearLayout_2"
-                android:background="#fff"
-                android:id="@+id/id_LinearLayout_3"
-                android:orientation="horizontal"
-                android:paddingTop="10dp"
-                android:paddingBottom="5dp"
+              android:id="@+id/id_Bypayment"
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+              android:orientation="horizontal"
+              >
+              <ImageButton
+                android:scaleType="centerInside"
+                android:background="@drawable/drawable_selector2"
+                android:src="@mipmap/paid"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+              <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="320dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="我的订单"
+                android:textSize="20sp"
+                android:textColor="#000"
+                />
+              <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="待付款"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="以付款"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="以完成"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="我的订单"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content" />
+                android:layout_height="30dp"
+                android:src="@mipmap/fanhuia1"
+                android:layout_gravity="center"
+                />
             </LinearLayout>
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#96CDCD"
+              />
+            <LinearLayout
+              android:id="@+id/rl_collection"
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+              android:orientation="horizontal"
+              >
 
-            <!--分界线-->
+              <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/drawable_selector2"
+                android:scaleType="centerInside"
+                android:src="@mipmap/completed" />
+              <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="320dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="店家认证"
+                android:textSize="20sp"
+                android:textColor="#000"
+                />
+              <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@mipmap/fanhuia1"
+                android:layout_gravity="center"
+                />
+            </LinearLayout>
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#96CDCD"
+              />
+            <LinearLayout
+              android:id="@+id/rl_setting"
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+              android:orientation="horizontal"
+              >
 
-            <LinearLayout
-                android:layout_below="@id/id_LinearLayout_3"
-                android:orientation="horizontal"
-                android:id="@+id/id_LinearLayout_4"
-                android:background="#fff"
-                android:layout_marginTop="10dp"
+              <ImageButton
+                android:scaleType="centerInside"
+                android:background="@drawable/drawable_selector2"
+                android:src="@mipmap/order"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="45dp" />
+              <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="315dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="设置"
+                android:textSize="20sp"
+                android:textColor="#000"
+                />
+              <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageButton
-                    android:id="@+id/rl_collection"
-                    android:background="@drawable/border_bottomright"
-                    android:layout_weight="1"
-                    android:paddingTop="15dp"
-                    android:scaleType="centerInside"
-                    android:paddingBottom="15dp"
-                    android:src="@mipmap/shoucan"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp" />
-                <ImageButton
-                    android:background="@drawable/border_bottomright"
-                    android:layout_weight="1"
-                    android:paddingTop="15dp"
-                    android:id="@+id/mylist"
-                    android:scaleType="centerInside"
-                    android:paddingBottom="15dp"
-                    android:src="@mipmap/qingdan"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp" />
-                <ImageButton
-                    android:background="@drawable/border_bottomright"
-                    android:layout_weight="1"
-                    android:paddingTop="15dp"
-                    android:scaleType="centerInside"
-                    android:paddingBottom="15dp"
-                    android:src="@mipmap/fuwu"
-                    android:id="@+id/servicecentre"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp" />
+                android:layout_height="30dp"
+                android:src="@mipmap/fanhuia1"
+                android:layout_gravity="center"
+                />
             </LinearLayout>
-            <LinearLayout
-                android:layout_below="@id/id_LinearLayout_4"
-                android:orientation="horizontal"
-                android:id="@+id/id_LinearLayout_4_1"
-                android:background="#fff"
-                android:layout_marginTop="0dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="店铺收藏"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="我的清单"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="服务中心"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content" />
-            </LinearLayout>
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#96CDCD"
+              />
+            <ImageButton
+              android:id="@+id/rl_myOrder"
+              android:background="@drawable/border_bottomright"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          </LinearLayout>
 
-            <!--分界线-->
 
-            <LinearLayout
-                android:layout_below="@id/id_LinearLayout_4_1"
-                android:orientation="horizontal"
-                android:id="@+id/id_LinearLayout_5"
-                android:background="#fff"
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageButton
-                    android:background="@drawable/border_bottomright"
-                    android:layout_weight="1"
-                    android:paddingTop="15dp"
-                    android:scaleType="centerInside"
-                    android:paddingBottom="15dp"
-                    android:src="@mipmap/xiaoxi"
-                    android:id="@+id/messages"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp" />
-                <ImageButton
-                    android:id="@+id/rl_dataManagement"
-                    android:background="@drawable/border_bottomright"
-                    android:layout_weight="1"
-                    android:paddingTop="15dp"
-                    android:scaleType="centerInside"
-                    android:paddingBottom="15dp"
-                    android:src="@mipmap/xinxi"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp" />
-                <ImageButton
-                    android:id="@+id/rl_setting"
-                    android:background="@drawable/border_bottomright"
-                    android:layout_weight="1"
-                    android:paddingTop="15dp"
-                    android:scaleType="centerInside"
-                    android:paddingBottom="15dp"
-                    android:src="@mipmap/shezhi"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_below="@id/id_LinearLayout_5"
-                android:id="@+id/id_LinearLayout_5_1"
-                android:orientation="horizontal"
-                android:background="#fff"
-                android:layout_marginTop="0dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="消息"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="信息资料"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:gravity="center"
-                    android:layout_weight="1"
-                    android:text="设置"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content" />
-            </LinearLayout>
+          <!--分界线-->
+
         </RelativeLayout>
     </android.support.v4.widget.NestedScrollView>
 

@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.example.plb.activity.InformationActivity;
 import com.example.plb.activity.ServiceCentre;
@@ -42,36 +43,17 @@ public class PersonalFragment extends Fragment implements View.OnClickListener{
 
     //初始化控件
     private void init() {
-        ImageButton rl_myOrder = view.findViewById(R.id.rl_myOrder);
-        ImageButton rl_setting = view.findViewById(R.id.rl_setting);
-        ImageView rl_subscription = view.findViewById(R.id.rl_subscription);
-        ImageButton rl_collection = view.findViewById(R.id.rl_collection);
-        ImageButton rl_dataManagement = view.findViewById(R.id.rl_dataManagement);
 
-        ImageButton id_Pending_payment = view.findViewById(R.id.id_Pending_payment);
-        ImageButton id_Bypayment = view.findViewById(R.id.id_Bypayment);
-        ImageButton ordertocomplete = view.findViewById(R.id.ordertocomplete);
-        ImageButton mylist = view.findViewById(R.id.mylist);
-        ImageButton servicecentre = view.findViewById(R.id.servicecentre);
-        ImageButton messages = view.findViewById(R.id.messages);
+        //
+        LinearLayout rl_dataManagement = view.findViewById(R.id.rl_dataManagement);
+      LinearLayout id_Bypayment = view.findViewById(R.id.id_Bypayment);
+      LinearLayout rl_collection = view.findViewById(R.id.rl_collection);
+      LinearLayout rl_setting = view.findViewById(R.id.rl_setting);
+      //
 
-        rl_myOrder.setOnClickListener(this);
         rl_setting.setOnClickListener(this);
-        rl_subscription.setOnClickListener(this);
         rl_collection.setOnClickListener(this);
         rl_dataManagement.setOnClickListener(this);
-        mylist.setOnClickListener(this);
-        servicecentre.setOnClickListener(this);
-        messages.setOnClickListener(this);
-
-        id_Pending_payment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), OrderActivity.class);
-                intent.putExtra("current",0);
-                startActivity(intent);
-            }
-        });
 
         id_Bypayment.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,18 +63,7 @@ public class PersonalFragment extends Fragment implements View.OnClickListener{
                 startActivity(intent);
             }
         });
-        ordertocomplete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//
-//                Intent intent = new Intent(getActivity(), OrderActivity.class);
-//                intent.putExtra("current",1);
-//                startActivity(intent);
-                Intent intent = new Intent(getActivity(), OrderActivity.class);
-                intent.putExtra("current",2);
-                startActivity(intent);
-            }
-        });
+
     }
 
     /**
@@ -102,11 +73,6 @@ public class PersonalFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.rl_myOrder://我的订单
-                Intent intent = new Intent(getActivity(), OrderActivity.class);
-                intent.putExtra("current",0);
-                startActivity(intent);
-                break;
             case R.id.rl_setting://设置--
                 startActivity(new Intent(getActivity(), SettingActivity.class));
                 break;
@@ -118,15 +84,6 @@ public class PersonalFragment extends Fragment implements View.OnClickListener{
                 break;
             case R.id.rl_dataManagement://消息--
                 startActivity(new Intent(getActivity(), InformationActivity.class));
-                break;
-            case R.id.mylist:/*我的清单*/
-                startActivity(new Intent(getActivity(), mylistActivity.class));
-                break;
-            case R.id.servicecentre:/*服务中心*/
-                startActivity(new Intent(getActivity(), ServiceCentre.class));
-                break;
-            case R.id.messages:/*消息*/
-                startActivity(new Intent(getActivity(), messages.class));
                 break;
             default:
                 break;

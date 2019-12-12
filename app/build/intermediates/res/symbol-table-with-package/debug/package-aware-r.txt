@@ -1091,7 +1091,6 @@ id f1
 id f2
 id f3
 id f4
-id f_layout
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1144,12 +1143,6 @@ id icon_tab
 id id_Bypayment
 id id_LinearLayout_1
 id id_LinearLayout_2
-id id_LinearLayout_3
-id id_LinearLayout_4
-id id_LinearLayout_4_1
-id id_LinearLayout_5
-id id_LinearLayout_5_1
-id id_Pending_payment
 id id_cb_select_all
 id id_cb_select_child
 id id_cb_select_parent
@@ -1236,17 +1229,11 @@ id message1
 id message1list
 id message2
 id messageicon
-id messages
 id middle
 id min_danjia
 id money
 id money_tv
 id multiply
-id my_account
-id my_account_text
-id my_shop
-id my_shop_text
-id mylist
 id mylist_listview
 id myshoplist
 id myshoplistimg
@@ -1264,7 +1251,6 @@ id option_shop_1
 id option_shop_2
 id option_shop_3
 id order_back
-id ordertocomplete
 id owner_name
 id packed
 id parameter_list
@@ -1367,7 +1353,6 @@ id season_type3
 id select
 id selectAll
 id select_dialog_listview
-id servicecentre
 id settlement
 id shizhong
 id shop_Num
@@ -1711,10 +1696,14 @@ mipmap example_1
 mipmap fangbianmian
 mipmap fangdajing
 mipmap fanhui
+mipmap fanhuia
+mipmap fanhuia1
 mipmap firstcode
 mipmap follow
 mipmap fork
 mipmap fuwu
+mipmap gengduoa
+mipmap gerenbeijing
 mipmap head_1
 mipmap hetao
 mipmap hicno
@@ -1831,6 +1820,7 @@ mipmap tick
 mipmap ticket
 mipmap tophead
 mipmap tou_xaing
+mipmap touxianga
 mipmap triangle
 mipmap ty
 mipmap type_back
