@@ -67,7 +67,7 @@ public class GuideActivity extends Activity implements View.OnClickListener {
                 if (sharedPreferences.getBoolean("AUTO_LOGIN",false)) {
                     startActivity(new Intent(GuideActivity.this, MainActivity.class));
                 }else {
-                    startActivity(new Intent(GuideActivity.this, MainActivity.class));
+                    startActivity(new Intent(GuideActivity.this, LoginPageActivity.class));
                 }
                 handler.removeMessages(1);
                 finish();
