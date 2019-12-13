@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Thu Dec 12 22:22:32 CST 2019
+=======
+#Thu Dec 12 18:35:52 CST 2019
+base.0=E\:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+>>>>>>> f05b08379dfeb87b02ba9fa2576630b463d65770
 path.1=classes.dex
 path.0=classes.dex
 renamed.10=classes11.dex

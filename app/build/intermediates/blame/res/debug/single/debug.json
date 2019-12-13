@@ -8,6 +8,7 @@
         "source": "C:\\Users\\cfw\\Desktop\\plb-maseter\\app\\src\\main\\res\\mipmap-xxhdpi\\bgimg_1.png"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\cfw\\Desktop\\plb-maseter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\cfw\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\0ef4207464a4b85845c21c238b6ddf77\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
     },
@@ -18,6 +19,18 @@
     {
         "merged": "C:\\Users\\cfw\\Desktop\\plb-maseter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\cfw\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\d97b69690b495da61a7f9c660667917a\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
+=======
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_baoyu.jpg.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-hdpi\\baoyu.jpg"
+    },
+    {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_type_back.png.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-mdpi\\type_back.png"
+>>>>>>> f05b08379dfeb87b02ba9fa2576630b463d65770
     },
     {
         "merged": "C:\\Users\\cfw\\Desktop\\plb-maseter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_deleteicon.png.flat",

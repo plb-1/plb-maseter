@@ -1,9 +1,12 @@
 package com.example.plb.activity;
 
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
@@ -33,9 +36,23 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
     private ImageView exit;
 
     private String yzCodeURL = "http://49.233.148.75/RetailManager/sms";
+    private String zcURL = "http://49.233.148.75/RetailManager/registerUser";
     private String TAG = "RegisteredActivity";
 
     private TimeCount time;
+    private EditText regOkPwd;
+    private String requestContent = "请求数据";
+
+    private Handler handler = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            switch (msg.what){
+                case 1:
+                    Toast.makeText(RegisteredActivity.this,"手机号码不正确",Toast.LENGTH_SHORT).show();
+                    break;
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,10 +111,11 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
         regPhone = findViewById(R.id.reg_phone);//店铺老板电话号码输入框
         regYzcode = findViewById(R.id.reg_yzcode);//验证码输入框
         regPwd = findViewById(R.id.reg_pwd);//密码输入框
+        regOkPwd = findViewById(R.id.reg_ok_pwd);//确认密码
 
         regYzcodeBtn = findViewById(R.id.reg_yzcode_btn);//手机验证码按钮
         regYzcodeBtn.setOnClickListener(this);
-        time = new TimeCount(15000,1000,regYzcodeBtn);
+        time = new TimeCount(30000, 1000, regYzcodeBtn);
 
         regCheckbox = findViewById(R.id.reg_checkbox);//是否同意用户许可
 
@@ -117,8 +135,16 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
             case R.id.reg_btn:
                 if (regCheckbox.isChecked()) {
                     if (regAccount.getText().length() > 0 && regPhone.getText().length() > 0 && regYzcode.getText().length() > 0 &&
-                            regPwd.getText().length() > 0) {
+                            regPwd.getText().length() > 0 && regOkPwd.getText().length() > 0) {
+                        if (requestContent.equals(regYzcode.getText().toString())) {
+                            String zcPaser = "{userName:"+regAccount.getText().toString()+",phone:"+regPhone.getText().toString()+",authCode:"+
+                                    regYzcode.getText().toString()+",password:"+ regPwd.getText().toString()+",okPassword:"+regOkPwd.getText().toString()+"}";
+                            Log.e(TAG, "onClick: zcPaser ---> "+zcPaser);
 
+                            String retrunMsg = NetWorkUtils.post(zcURL,zcPaser);
+                            Log.e(TAG, "onClick: retrunMsg ---> "+retrunMsg);
+                        }
+                        requestContent = "";
                     } else {
                         Toast.makeText(RegisteredActivity.this, "请先输入注册信息", Toast.LENGTH_SHORT).show();
                     }
@@ -127,21 +153,29 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
                 }
                 break;
             case R.id.reg_yzcode_btn:
-                if (regPhone.getText().length()!=0&&!"".equals(regPhone.getText().toString())) {
+                if (regPhone.getText().length() != 0 && !"".equals(regPhone.getText().toString())) {
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
-                            time.start();
-                            String requestContent = "请求数据";
-                            requestContent = NetWorkUtils.get(yzCodeURL,regPhone.getText().toString());
-                            Log.e(TAG,requestContent);
+                            if (isMobileNumber(regPhone.getText().toString())) {
+                                time.start();
+                                requestContent = NetWorkUtils.get(yzCodeURL, regPhone.getText().toString());
+                                Log.e(TAG, requestContent);
+                            }else {
+                                handler.sendEmptyMessage(1);
+                            }
                         }
                     }).start();
-                }else {
-                    Toast.makeText(RegisteredActivity.this,"请输入手机号",Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(RegisteredActivity.this, "请输入手机号", Toast.LENGTH_SHORT).show();
                 }
                 break;
         }
     }
 
+    //验证手机号
+    public static boolean isMobileNumber(String mobiles) {
+        String telRegex = "^((13[0-9])|(15[^4])|(18[0-9])|(17[0-8])|(147,145))\\d{8}$";
+        return !TextUtils.isEmpty(mobiles) && mobiles.matches(telRegex);
+    }
 }

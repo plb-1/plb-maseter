@@ -667,6 +667,7 @@ public final class R {
         public static final int left = 0x7f0800f1;
         public static final int line1 = 0x7f0800f3;
         public static final int line3 = 0x7f0800f4;
+<<<<<<< HEAD
         public static final int listMode = 0x7f0800f9;
         public static final int list_item = 0x7f0800fa;
         public static final int message = 0x7f08010a;
@@ -680,6 +681,21 @@ public final class R {
         public static final int progress_circular = 0x7f080143;
         public static final int progress_horizontal = 0x7f080144;
         public static final int radio = 0x7f080145;
+=======
+        public static final int listMode = 0x7f0800f8;
+        public static final int list_item = 0x7f0800f9;
+        public static final int message = 0x7f080109;
+        public static final int multiply = 0x7f080112;
+        public static final int none = 0x7f080118;
+        public static final int normal = 0x7f080119;
+        public static final int notification_background = 0x7f08011a;
+        public static final int notification_main_column = 0x7f08011b;
+        public static final int notification_main_column_container = 0x7f08011c;
+        public static final int parentPanel = 0x7f080128;
+        public static final int progress_circular = 0x7f080142;
+        public static final int progress_horizontal = 0x7f080143;
+        public static final int radio = 0x7f080144;
+>>>>>>> f05b08379dfeb87b02ba9fa2576630b463d65770
         public static final int right = 0x7f08015b;
         public static final int right_icon = 0x7f08015c;
         public static final int right_side = 0x7f08015e;
@@ -698,6 +714,7 @@ public final class R {
         public static final int search_src_text = 0x7f08017d;
         public static final int search_voice_btn = 0x7f08017e;
         public static final int select_dialog_listview = 0x7f08018a;
+<<<<<<< HEAD
         public static final int shortcut = 0x7f0801b5;
         public static final int spacer = 0x7f0801ba;
         public static final int split_action_bar = 0x7f0801bb;
@@ -724,6 +741,34 @@ public final class R {
         public static final int uniform = 0x7f080208;
         public static final int up = 0x7f080209;
         public static final int wrap_content = 0x7f080217;
+=======
+        public static final int shortcut = 0x7f0801b4;
+        public static final int spacer = 0x7f0801b9;
+        public static final int split_action_bar = 0x7f0801ba;
+        public static final int src_atop = 0x7f0801bd;
+        public static final int src_in = 0x7f0801be;
+        public static final int src_over = 0x7f0801bf;
+        public static final int start = 0x7f0801c1;
+        public static final int submenuarrow = 0x7f0801c5;
+        public static final int submit_area = 0x7f0801c6;
+        public static final int tabMode = 0x7f0801cd;
+        public static final int tag_transition_group = 0x7f0801ce;
+        public static final int tag_unhandled_key_event_manager = 0x7f0801cf;
+        public static final int tag_unhandled_key_listeners = 0x7f0801d0;
+        public static final int text = 0x7f0801e4;
+        public static final int text2 = 0x7f0801e6;
+        public static final int textSpacerNoButtons = 0x7f0801e7;
+        public static final int textSpacerNoTitle = 0x7f0801e8;
+        public static final int time = 0x7f0801ec;
+        public static final int title = 0x7f0801ed;
+        public static final int titleDividerNoCustom = 0x7f0801ee;
+        public static final int title_template = 0x7f0801f0;
+        public static final int top = 0x7f0801f1;
+        public static final int topPanel = 0x7f0801f2;
+        public static final int uniform = 0x7f08020a;
+        public static final int up = 0x7f08020b;
+        public static final int wrap_content = 0x7f080219;
+>>>>>>> f05b08379dfeb87b02ba9fa2576630b463d65770
     }
     public static final class integer {
         private integer() {}
