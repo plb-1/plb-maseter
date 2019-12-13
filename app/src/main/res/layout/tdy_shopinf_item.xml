@@ -18,6 +18,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="false"
                 android:focusable="false"
+                android:theme="@style/MyCheckBox"
                 android:textColor="@color/black"
                 android:focusableInTouchMode="false"
                 android:gravity="center_vertical" />

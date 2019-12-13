@@ -16,6 +16,11 @@
         <item name="android:button">@drawable/ck_all</item>
     </style>
 
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#F5F5F5</item>
+        <item name="colorControlActivated">@color/orange</item>
+    </style>
+
 
     <!-- product_info -->
     <style name="ProductInfoDialogStyle" parent="@android:style/Theme.Dialog">
