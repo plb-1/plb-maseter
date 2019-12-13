@@ -2,7 +2,7 @@
 <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#EEEEEE"
+    android:background="#FAFAFA"
     >
     <!--android:focusable="false" 不占用原有View点击事件-->
     <CheckBox
