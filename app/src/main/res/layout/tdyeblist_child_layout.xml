@@ -2,7 +2,7 @@
 <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#EEEEEE"
+    android:background="#FAFAFA"
     >
     <!--android:focusable="false" 不占用原有View点击事件-->
     <CheckBox
@@ -10,6 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
+        android:theme="@style/MyCheckBox"
         android:layout_marginLeft="10dp"
         android:background="@null"
         android:focusable="false"/>

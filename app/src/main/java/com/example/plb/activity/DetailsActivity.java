@@ -1,14 +1,29 @@
 package com.example.plb.activity;
 
+import android.annotation.TargetApi;
+import android.app.Activity;
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Build;
+import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
@@ -16,16 +31,26 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.plb.R;
+//import com.example.plb.adapter.DetailAdapter;
+import com.example.plb.adapter.DetailAdapter;
+import com.example.plb.bean.ShopBean;
 import com.example.plb.fragment.DetailsDetailsFragment;
 import com.example.plb.fragment.DetailsShopFragment;
 
 
 public class DetailsActivity extends AppCompatActivity implements View.OnClickListener {
-    private DetailsShopFragment fragmentShop;
-    private DetailsDetailsFragment fragmentDetails;
-    private TextView textView1,textView2;
+//    private DetailsShopFragment fragmentShop;
+//    private DetailsDetailsFragment fragmentDetails;
+    //private TextView textView1,textView2;
     private ImageView imageView;
     private ImageButton imageButton;
+    private RecyclerView rv_home;
+    private AddShopPopupwindow mPopwindow;
+    private TextView shop;
+    private CheckBox checkBox;//关注
+    public static boolean checkd;
+    private Button add_shop;//加入进货单
+    ShopBean shopBean = new ShopBean ();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,30 +66,67 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
         }*/
         /*getWindow().setStatusBarColor(getResources ().getColor ( R.color.orange ));*/
         setContentView ( R.layout.activity_details );
-        textView1 = findViewById ( R.id.tvOne );
-        textView2 = findViewById ( R.id.tvTwo );
+        /*textView1 = findViewById ( R.id.tvOne );
+        textView2 = findViewById ( R.id.tvTwo );*/
         imageView = findViewById ( R.id.iv_shop );
+        shop = findViewById(R.id.shop);
         imageButton = findViewById ( R.id.ib_back );
-        textView1.setOnClickListener ( this );
-        textView2.setOnClickListener ( this );
+        add_shop = findViewById(R.id.add_shop);
+
+        rv_home = findViewById(R.id.rv_home);
+        checkBox = findViewById(R.id.checkbox);
+        //initDate();
+
+        DetailAdapter adapter = new DetailAdapter(DetailsActivity.this);
+        GridLayoutManager manager = new GridLayoutManager(DetailsActivity.this,1);
+        //设置画度大小的监听
+        manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+            @Override
+            public int getSpanSize(int position) {
+               if(position == 0){
+                    shop.setText("商品");
+                }else if(position == 1){
+                    shop.setText("详情");
+                }
+                return 1;
+           }
+        });
+        rv_home.setAdapter(adapter);
+        rv_home.setLayoutManager(manager);
+       // rv_home.setLayoutManager(new LinearLayoutManager(DetailsActivity.this));
+        /*textView1.setOnClickListener ( this );
+        textView2.setOnClickListener ( this );*/
         imageView.setOnClickListener ( this );
         imageButton.setOnClickListener ( this );
-        fragmentShop  = new DetailsShopFragment ();
-        fragmentDetails = new DetailsDetailsFragment ();
-        FragmentManager fragmentManager = getSupportFragmentManager ();
-        FragmentTransaction transaction = fragmentManager.beginTransaction ();
-        transaction.replace ( R.id.rl_shop,fragmentShop );
-        transaction.commit ();
+        add_shop.setOnClickListener(this);
+
+        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    isChecked = true;
+                    checkd = isChecked;
+                } else {
+                    isChecked = false;
+                    checkd = isChecked;
+                }
+            }
+        });
+       //FragmentManager fragmentManager = getSupportFragmentManager ();
+        //FragmentTransaction transaction = fragmentManager.beginTransaction ();
+        //transaction.replace ( R.id.rl_shop,fragmentShop );
+        //transaction.commit ();
+        /*viewPager.setAdapter(new DetailAdapter(getSupportFragmentManager()));
+        tablayout.setVisibility(View.VISIBLE);
+        tablayout.setupWithViewPager(viewPager);*/
     }
-
-
-
+    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
     @Override
     public void onClick(View v) {
-        FragmentManager fm = getSupportFragmentManager ();
-        FragmentTransaction transaction = fm.beginTransaction ();
+        //FragmentManager fm = getSupportFragmentManager ();
+        //FragmentTransaction transaction = fm.beginTransaction ();
         switch (v.getId ()) {
-            case R.id.tvOne:
+            /*case R.id.tvOne:
                 transaction.replace ( R.id.rl_shop, fragmentShop );
                 textView1.setTextColor ( getResources ().getColor ( R.color.orange ) );
                 textView2.setTextColor ( getResources ().getColor ( R.color.black ) );
@@ -74,6 +136,10 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
                 transaction.replace ( R.id.rl_shop, fragmentDetails );
                 textView2.setTextColor ( getResources ().getColor ( R.color.orange ) );
                 textView1.setTextColor ( getResources ().getColor ( R.color.black ) );
+                break;*/
+            case R.id.add_shop:
+                mPopwindow = new AddShopPopupwindow(DetailsActivity.this, null);
+                mPopwindow.showAtLocation(v, Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
                 break;
             case R.id.iv_shop:
                 showPopupMenu(imageView);
@@ -82,11 +148,12 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
                 finish ();
                 break;
         }
-        transaction.commit ();
+       // transaction.commit ();
     }
 
-
     //状态栏菜单
+    @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
+    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
     private void showPopupMenu(View view) {
         // View当前PopupMenu显示的相对View的位置
         PopupMenu popupMenu = new PopupMenu(this, view);
@@ -97,7 +164,7 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 Toast.makeText(getApplicationContext(), item.getTitle(), Toast.LENGTH_SHORT).show();
-                return false; 
+                return false;
             }
         });
         // PopupMenu关闭事件
@@ -108,5 +175,4 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
         });
         popupMenu.show();
     }
-
 }

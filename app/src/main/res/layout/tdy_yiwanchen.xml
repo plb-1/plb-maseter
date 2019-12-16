@@ -24,6 +24,7 @@
         android:layout_height="50dp">
         <CheckBox
             android:text="全选"
+            android:theme="@style/MyCheckBox"
             android:id="@+id/ckdall"
             android:layout_weight="1"
             android:layout_width="wrap_content"
