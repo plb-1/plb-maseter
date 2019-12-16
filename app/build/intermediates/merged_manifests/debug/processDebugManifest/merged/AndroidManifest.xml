@@ -74,7 +74,8 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.example.plb.activity.InformationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name="com.example.plb.tdy.Detailedlist.tdy_daifukuan"
             android:screenOrientation="portrait" />

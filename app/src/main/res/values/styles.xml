@@ -64,13 +64,8 @@
         <!--选中的颜色-->
         <item name="colorAccent">@color/orange</item>
     </style>
+  <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+    <item name="android:button">@drawable/checkbox</item>
 
-    <style name="LoadProgressDialog">
-        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:backgroundDimAmount">0.6</item><!-- 灰度 -->
-        <!--Dialog图标着色-->
-        <!--<item name="colorAccent">#ffffff</item>-->
-    </style>
-
+  </style>
 </resources>

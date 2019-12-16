@@ -4,11 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.plb.R;
 
-public class SettingActivity extends AppCompatActivity implements View.OnClickListener{
-
+public class SettingActivity extends AppCompatActivity{
+ImageView fanhui1;
+TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,16 +19,21 @@ public class SettingActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     private void init() {
-        ImageView iv_back = findViewById(R.id.iv_back);
-        iv_back.setOnClickListener(this);
+      fanhui1 =findViewById(R.id.fanhui2);
+      textView=findViewById(R.id.tuichu1);
+      textView.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+        }
+      });
+
+
+     fanhui1.setOnClickListener(new View.OnClickListener() {
+       @Override
+       public void onClick(View v) {
+         finish();
+       }
+     });
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.iv_back:
-                finish();
-                break;
-        }
-    }
 }

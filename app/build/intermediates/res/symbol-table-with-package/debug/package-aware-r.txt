@@ -901,7 +901,6 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable anim_loading
 drawable bg_btn_style_white
 drawable bg_edittext_selector
 drawable bgcolor_radios
@@ -915,6 +914,7 @@ drawable btn_border
 drawable btn_delete
 drawable btn_settlement
 drawable button_download
+drawable checkbox
 drawable checkbox_productinfo_style
 drawable ck_all
 drawable drawable_selector
@@ -960,6 +960,8 @@ drawable tdy_back_radius_trtl_3
 drawable tdy_home_border
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable weixuanzhong
+drawable xuanzhong
 id ALT
 id CTRL
 id Deliverystatus
@@ -1092,6 +1094,8 @@ id f1
 id f2
 id f3
 id f4
+id fanhui1
+id fanhui2
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1183,9 +1187,6 @@ id image_2
 id image_3
 id image_4
 id img
-id immersion_fits_layout_overlap
-id immersion_navigation_bar_view
-id immersion_status_bar_view
 id imported
 id info
 id invisible
@@ -1194,7 +1195,6 @@ id item_right_menu_market_text
 id item_spinner
 id item_touch_helper_previous_elevation
 id iv
-id iv_back
 id iv_child
 id iv_exit
 id iv_payment
@@ -1211,7 +1211,6 @@ id line3
 id line_bottom
 id line_head
 id linear
-id linearLayout
 id linearlayout2
 id listMode
 id list_item
@@ -1287,7 +1286,6 @@ id productinfo_shop_jinkou
 id productinfo_shop_name
 id productinfo_shop_price
 id productinfo_shop_price_layout
-id progressBar1
 id progress_circular
 id progress_horizontal
 id radio
@@ -1317,17 +1315,12 @@ id right
 id right_icon
 id right_menu_gridview
 id right_side
-id rl_back
-id rl_collection
 id rl_dataManagement
-id rl_feedback
 id rl_myOrder
 id rl_parameter
 id rl_setting
 id rl_subscription
 id rl_title
-id rl_update
-id rl_version
 id round
 id rv_home
 id screen
@@ -1467,6 +1460,7 @@ id title_template
 id top
 id topPanel
 id total
+id tuichu1
 id tv
 id tvPostPrice
 id tv_child
@@ -1476,7 +1470,6 @@ id tv_hasPayment
 id tv_hot_home
 id tv_items_child
 id tv_items_child_desc
-id tv_message
 id tv_search_home
 id tv_shop_money
 id tv_stayPayment
@@ -1556,7 +1549,6 @@ layout activity_setting
 layout activity_store_certification
 layout child_shopcart
 layout commodity_item
-layout dialog_layout
 layout fragment_basic_info
 layout fragment_details_details
 layout fragment_details_shop
@@ -1745,7 +1737,6 @@ mipmap left_arrow_black
 mipmap left_exit
 mipmap leshi
 mipmap list
-mipmap loading
 mipmap location_gray
 mipmap location_white
 mipmap login_phone
@@ -2089,7 +2080,7 @@ style Base_Widget_AppCompat_TextView_SpinnerItem
 style Base_Widget_AppCompat_Toolbar
 style Base_Widget_AppCompat_Toolbar_Button_Navigation
 style CheckBoXTheme
-style LoadProgressDialog
+style CustomCheckboxTheme
 style MyCheckBox
 style Platform_AppCompat
 style Platform_AppCompat_Light
