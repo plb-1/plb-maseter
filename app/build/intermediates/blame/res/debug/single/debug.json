@@ -472,6 +472,10 @@
         "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\color\\selector_tab_text.xml"
     },
     {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_loading.png.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\mipmap-mdpi\\loading.png"
+    },
+    {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
     },
@@ -590,6 +594,10 @@
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_layout.xml.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\layout\\dialog_layout.xml"
     },
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_edittext.xml.flat",
@@ -1230,6 +1238,10 @@
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_check_material.xml.flat",
         "source": "C:\\Users\\rose\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\e62b40323c5432f3b193172f412d9767\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_anim_loading.xml.flat",
+        "source": "E:\\MyApp\\PLT-master\\PLT-master\\app\\src\\main\\res\\drawable\\anim_loading.xml"
     },
     {
         "merged": "E:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
