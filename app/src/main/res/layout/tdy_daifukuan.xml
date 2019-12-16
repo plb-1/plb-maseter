@@ -24,6 +24,7 @@
         android:layout_height="50dp">
         <CheckBox
             android:text="全选"
+          style="@style/CustomCheckboxTheme"
             android:id="@+id/ckdall"
             android:layout_weight="1"
             android:theme="@style/MyCheckBox"
@@ -32,7 +33,6 @@
         <TextView
             android:id="@+id/sumprice"
             android:layout_marginLeft="5dp"
-            android:text="金额：200"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

@@ -1,319 +1,321 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:2:1-70:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\d97b69690b495da61a7f9c660667917a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7185a6582e3ff45ee66ee6510bcf4a48\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\fd6c9d65b0e2b8ba11f3dd68a95540a3\AndroidManifest.xml:17:1-22:12
-MERGED from [com.zhy:okhttputils:2.6.2] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\okhttputils-2.6.2.aar\c8e4f9a900b639b79db697e7da00c77e\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\a8d65acc0eb1489dbc9a58eef17d2b24\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\3e70aeaa0ace2c7946ce4e2a44e34928\AndroidManifest.xml:2:1-12:12
-MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\9fd9ffb7bb9a55ae0b6f8ff208642846\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\7e061fc5ca0d75c60f7a02e9dae186f7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\83f634c9a0c4a6517aa58e68d514d5f1\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\8a59f8a3fa0df3d48edb336add7a02f7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\fa565473a955e69b6093e9188f78ba71\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\6e4e6daf4d5403cd10484dfffcbac58c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\46e8d85d0019780e1bcc5737c7848869\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\434b1e7b045297a07ee6f0e865f28ecb\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\7ae6fa62d1f94c3575c0a35f6d11fe4a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\fc20b50c48cf20ef188feffa3c4bbc6c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\263cfa381e86327024dd1bf472d57919\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\19ec1fc8334fb7516e17d9047ba4ffe7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\a9fd255b8b82fabc7965e6539614d49a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\fa6656deffe91fc41c28b62fd223ab17\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\a352e7f7ba5b8e6edb68de0ece0cbcf4\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\0ef4207464a4b85845c21c238b6ddf77\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\4fbfa672e034596cf0973725d2a3f5b1\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\7e16732d297b386f65b717c899779452\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\a20361a24932a3308def35720b2e416f\AndroidManifest.xml:2:1-11:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\994d692737e20c80db3fb9ab8c71217e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\e6946904141157c9c3f2f1b525f214b5\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\19de615e93078e6ab4e7619c3e5812cd\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\fd6772f44e271b3a89ab92b6b6348453\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\c3bdb1233ef41f75d293595eea9dfd13\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\1d1fdfccf2ebffa6904904fb8f87747a\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\59c71772e1bf055da674ae1a36e33960\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\78040501b1fd764be997cb4d82e54119\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\230dd768e35638d72459714c924cfec2\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:2:1-70:12
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:2:1-72:12
+INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:2:1-72:12
+INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:2:1-72:12
+INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:2:1-72:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b88b847f86f735270d1c5b92b00e25a6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\02a55bebe4001c81d33e7df2f9c130cf\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\1603cb9481e57e73135392dd71fcd6c4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.zhy:okhttputils:2.6.2] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\okhttputils-2.6.2.aar\8ba72f6ec921242f6fafb3e47594cd24\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\edb67368d6f2c5e8b46a323303d6fb07\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\fb29bf864bb2f4a341f109576227a950\AndroidManifest.xml:2:1-12:12
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\f70d21b9cd39b008995087524233a995\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\d9da79d263abe6c4c38535ccf70faa2b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\5e5487e8029058c1d1923c493d39bece\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\ad60c9c03f526665fac4db0f94462a7a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\7a7cb6ded2af286f9362462033d53ae5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\c5a41b16b9d22f89e2bf568bdf3ef708\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\c17d3f03c334d812a0a9fcb2aebea1b3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\77a70cff4827a51b7279483f05b4dbea\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\0dd2da18912bb5e36d368acf694001e5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\c2db235e79cd96d94cec819f3d7db4f4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\fd3715fa9fdf8d942bbe2ef89416f55b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\a20d89551fb01410acf0f7683fba16a9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\56ef611d5c5471c24ffee06065ddcc52\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\c096a330d423c0ec19ee26ba69a2d161\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\d9159dd0c463c44b380f3bd8c51a6690\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\f7a3b4ebacc0c830a5e2e635b6a4cb04\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\2c068eb4cfcee6ac8ff6a9ede6e98892\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\d69cd65a4306eb0256e6c9fc75352068\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\eebcde32e6a54fbcf8c90566fc8e9b15\AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\6335414f697249c935461e04ad2c0dbe\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\a56eb3f90296d2dd9ff71cf308db8c20\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\bb51a6c72d01c7b45534c84840af85fc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\7fdbf2678997a589665a99c6f6732a9d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\0dd67601be06d6efc03c2e70701ab00a\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\ac570eabb0b7ae314c8f8e0f378b9c03\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\827e5a54f32144d2b87beec9057452a6\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\5efa9fa58eb920323042d600a3b234cc\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\c9f94410f3743292a2267268a94af679\AndroidManifest.xml:17:1-22:12
+INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:2:1-72:12
+INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:2:1-72:12
+INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:2:1-72:12
 	package
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:3:5-30
-		INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:3:5-30
+		INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:2:1-70:12
-		INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:2:1-72:12
+		INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:2:1-70:12
-		INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:2:1-72:12
+		INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:6:5-72
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:6:5-72
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:6:22-70
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:6:22-70
 uses-feature#android.hardware.camera
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:7:5-60
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:7:5-60
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:7:19-57
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:7:19-57
 application
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:9:5-68:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7185a6582e3ff45ee66ee6510bcf4a48\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7185a6582e3ff45ee66ee6510bcf4a48\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\3e70aeaa0ace2c7946ce4e2a44e34928\AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\3e70aeaa0ace2c7946ce4e2a44e34928\AndroidManifest.xml:10:5-20
-MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\9fd9ffb7bb9a55ae0b6f8ff208642846\AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\9fd9ffb7bb9a55ae0b6f8ff208642846\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\0ef4207464a4b85845c21c238b6ddf77\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\0ef4207464a4b85845c21c238b6ddf77\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\4fbfa672e034596cf0973725d2a3f5b1\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\4fbfa672e034596cf0973725d2a3f5b1\AndroidManifest.xml:22:5-23:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\a20361a24932a3308def35720b2e416f\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\a20361a24932a3308def35720b2e416f\AndroidManifest.xml:9:5-20
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:9:5-70:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\02a55bebe4001c81d33e7df2f9c130cf\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\02a55bebe4001c81d33e7df2f9c130cf\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\fb29bf864bb2f4a341f109576227a950\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\fb29bf864bb2f4a341f109576227a950\AndroidManifest.xml:10:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\f70d21b9cd39b008995087524233a995\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\f70d21b9cd39b008995087524233a995\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\f7a3b4ebacc0c830a5e2e635b6a4cb04\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\f7a3b4ebacc0c830a5e2e635b6a4cb04\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\2c068eb4cfcee6ac8ff6a9ede6e98892\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\2c068eb4cfcee6ac8ff6a9ede6e98892\AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\eebcde32e6a54fbcf8c90566fc8e9b15\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\eebcde32e6a54fbcf8c90566fc8e9b15\AndroidManifest.xml:9:5-20
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\0ef4207464a4b85845c21c238b6ddf77\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\f7a3b4ebacc0c830a5e2e635b6a4cb04\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:14:9-41
 	android:icon
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:11:9-36
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:11:9-36
 	android:allowBackup
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:16:9-40
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:16:9-40
 	android:networkSecurityConfig
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:13:9-69
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:13:9-69
 activity#com.example.plb.activity.MainActivity
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:17:8-20:50
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:17:8-20:50
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:20:12-48
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:20:12-48
 	android:theme
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:19:13-69
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:19:13-69
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:18:13-50
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:18:13-50
 activity#com.example.plb.activity.GuideActivity
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:21:9-30:20
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:21:9-30:20
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:24:13-49
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:24:13-49
 	android:theme
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:23:13-69
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:23:13-69
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:22:13-51
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:22:13-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:25:13-29:29
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:26:17-69
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:26:25-66
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:28:17-77
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:28:27-74
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:28:27-74
 activity#com.example.plb.activity.FirmOrder
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:31:9-34:51
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:31:9-34:51
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:34:13-49
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:34:13-49
 	android:theme
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:33:13-69
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:33:13-69
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:32:13-47
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:32:13-47
 activity#com.example.plb.activity.DetailsActivity
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:35:9-38:51
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:35:9-38:51
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:38:13-49
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:38:13-49
 	android:theme
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:37:13-69
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:37:13-69
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:36:13-53
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:36:13-53
 activity#com.example.plb.activity.PersonalActivity
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:39:9-63
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:39:9-63
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:39:19-60
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:39:19-60
 activity#com.example.plb.activity.OrderActivity
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:40:9-43:51
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:40:9-43:51
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:43:13-49
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:43:13-49
 	android:theme
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:42:13-69
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:42:13-69
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:41:13-51
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:41:13-51
 activity#com.example.plb.activity.SettingActivity
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:44:9-47:51
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:44:9-47:51
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:47:13-49
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:47:13-49
 	android:theme
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:46:13-69
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:46:13-69
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:45:13-53
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:45:13-53
 activity#com.example.plb.activity.LoginPageActivity
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:48:9-51:51
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:48:9-51:51
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:51:13-49
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:51:13-49
 	android:theme
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:50:13-69
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:50:13-69
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:49:13-55
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:49:13-55
 activity#com.example.plb.activity.commodity
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:52:9-53:51
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:52:9-53:51
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:53:13-49
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:53:13-49
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:52:19-53
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:52:19-53
 activity#com.example.plb.activity.RegisteredActivity
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:54:9-57:51
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:54:9-57:51
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:57:13-49
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:57:13-49
 	android:theme
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:56:13-69
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:56:13-69
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:55:13-56
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:55:13-56
 activity#com.example.plb.activity.StoreCertificationActivity
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:58:9-59:51
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:58:9-59:51
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:59:13-49
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:59:13-49
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:58:19-70
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:58:19-70
 activity#com.example.plb.activity.ProductInfoActivity
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:60:9-102
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:60:9-102
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:60:64-100
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:60:64-100
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:60:19-63
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:60:19-63
 activity#com.example.plb.activity.InformationActivity
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:61:9-102
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:61:9-63:13
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:61:64-100
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:61:64-100
+	android:theme
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:62:11-58
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:61:19-63
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:61:19-63
 activity#com.example.plb.tdy.Detailedlist.tdy_daifukuan
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:62:9-104
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:64:9-104
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:62:66-102
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:64:66-102
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:62:19-65
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:64:19-65
 activity#com.example.plb.tdy.Detailedlist.tdy_yifukuan
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:63:9-103
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:65:9-103
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:63:65-101
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:65:65-101
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:63:19-64
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:65:19-64
 activity#com.example.plb.tdy.Detailedlist.tdy_yiwanchen
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:64:9-104
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:66:9-104
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:64:66-102
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:66:66-102
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:64:19-65
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:66:19-65
 activity#com.example.plb.activity.mylistActivity
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:65:9-97
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:67:9-97
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:65:59-95
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:67:59-95
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:65:19-58
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:67:19-58
 activity#com.example.plb.activity.ServiceCentre
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:66:9-96
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:68:9-96
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:66:58-94
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:68:58-94
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:66:19-57
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:68:19-57
 activity#com.example.plb.activity.messages
-ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:67:9-91
+ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:69:9-91
 	android:screenOrientation
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:67:53-89
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:69:53-89
 	android:name
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml:67:19-52
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml:69:19-52
 uses-sdk
-INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\d97b69690b495da61a7f9c660667917a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\d97b69690b495da61a7f9c660667917a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7185a6582e3ff45ee66ee6510bcf4a48\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7185a6582e3ff45ee66ee6510bcf4a48\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\fd6c9d65b0e2b8ba11f3dd68a95540a3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\fd6c9d65b0e2b8ba11f3dd68a95540a3\AndroidManifest.xml:20:5-44
-MERGED from [com.zhy:okhttputils:2.6.2] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\okhttputils-2.6.2.aar\c8e4f9a900b639b79db697e7da00c77e\AndroidManifest.xml:7:5-9:41
-MERGED from [com.zhy:okhttputils:2.6.2] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\okhttputils-2.6.2.aar\c8e4f9a900b639b79db697e7da00c77e\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\a8d65acc0eb1489dbc9a58eef17d2b24\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\a8d65acc0eb1489dbc9a58eef17d2b24\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\3e70aeaa0ace2c7946ce4e2a44e34928\AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\3e70aeaa0ace2c7946ce4e2a44e34928\AndroidManifest.xml:6:5-8:41
-MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\9fd9ffb7bb9a55ae0b6f8ff208642846\AndroidManifest.xml:5:5-7:41
-MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\9fd9ffb7bb9a55ae0b6f8ff208642846\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\7e061fc5ca0d75c60f7a02e9dae186f7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\7e061fc5ca0d75c60f7a02e9dae186f7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\83f634c9a0c4a6517aa58e68d514d5f1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\83f634c9a0c4a6517aa58e68d514d5f1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\8a59f8a3fa0df3d48edb336add7a02f7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\8a59f8a3fa0df3d48edb336add7a02f7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\fa565473a955e69b6093e9188f78ba71\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\fa565473a955e69b6093e9188f78ba71\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\6e4e6daf4d5403cd10484dfffcbac58c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\6e4e6daf4d5403cd10484dfffcbac58c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\46e8d85d0019780e1bcc5737c7848869\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\46e8d85d0019780e1bcc5737c7848869\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\434b1e7b045297a07ee6f0e865f28ecb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\434b1e7b045297a07ee6f0e865f28ecb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\7ae6fa62d1f94c3575c0a35f6d11fe4a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\7ae6fa62d1f94c3575c0a35f6d11fe4a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\fc20b50c48cf20ef188feffa3c4bbc6c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\fc20b50c48cf20ef188feffa3c4bbc6c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\263cfa381e86327024dd1bf472d57919\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\263cfa381e86327024dd1bf472d57919\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\19ec1fc8334fb7516e17d9047ba4ffe7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\19ec1fc8334fb7516e17d9047ba4ffe7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\a9fd255b8b82fabc7965e6539614d49a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\a9fd255b8b82fabc7965e6539614d49a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\fa6656deffe91fc41c28b62fd223ab17\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\fa6656deffe91fc41c28b62fd223ab17\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\a352e7f7ba5b8e6edb68de0ece0cbcf4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\a352e7f7ba5b8e6edb68de0ece0cbcf4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\0ef4207464a4b85845c21c238b6ddf77\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\0ef4207464a4b85845c21c238b6ddf77\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\4fbfa672e034596cf0973725d2a3f5b1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\4fbfa672e034596cf0973725d2a3f5b1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\7e16732d297b386f65b717c899779452\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\7e16732d297b386f65b717c899779452\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\a20361a24932a3308def35720b2e416f\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\a20361a24932a3308def35720b2e416f\AndroidManifest.xml:5:5-7:41
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\994d692737e20c80db3fb9ab8c71217e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\994d692737e20c80db3fb9ab8c71217e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\e6946904141157c9c3f2f1b525f214b5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\e6946904141157c9c3f2f1b525f214b5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\19de615e93078e6ab4e7619c3e5812cd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\19de615e93078e6ab4e7619c3e5812cd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\fd6772f44e271b3a89ab92b6b6348453\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\fd6772f44e271b3a89ab92b6b6348453\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\c3bdb1233ef41f75d293595eea9dfd13\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\c3bdb1233ef41f75d293595eea9dfd13\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\1d1fdfccf2ebffa6904904fb8f87747a\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\1d1fdfccf2ebffa6904904fb8f87747a\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\59c71772e1bf055da674ae1a36e33960\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\59c71772e1bf055da674ae1a36e33960\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\78040501b1fd764be997cb4d82e54119\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\78040501b1fd764be997cb4d82e54119\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\230dd768e35638d72459714c924cfec2\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\cfw\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\230dd768e35638d72459714c924cfec2\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
+INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
+INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b88b847f86f735270d1c5b92b00e25a6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b88b847f86f735270d1c5b92b00e25a6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\02a55bebe4001c81d33e7df2f9c130cf\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\02a55bebe4001c81d33e7df2f9c130cf\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\1603cb9481e57e73135392dd71fcd6c4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\1603cb9481e57e73135392dd71fcd6c4\AndroidManifest.xml:20:5-44
+MERGED from [com.zhy:okhttputils:2.6.2] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\okhttputils-2.6.2.aar\8ba72f6ec921242f6fafb3e47594cd24\AndroidManifest.xml:7:5-9:41
+MERGED from [com.zhy:okhttputils:2.6.2] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\okhttputils-2.6.2.aar\8ba72f6ec921242f6fafb3e47594cd24\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\edb67368d6f2c5e8b46a323303d6fb07\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\edb67368d6f2c5e8b46a323303d6fb07\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\fb29bf864bb2f4a341f109576227a950\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\fb29bf864bb2f4a341f109576227a950\AndroidManifest.xml:6:5-8:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\f70d21b9cd39b008995087524233a995\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\circleimageview-3.0.0.aar\f70d21b9cd39b008995087524233a995\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\d9da79d263abe6c4c38535ccf70faa2b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\d9da79d263abe6c4c38535ccf70faa2b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\5e5487e8029058c1d1923c493d39bece\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\5e5487e8029058c1d1923c493d39bece\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\ad60c9c03f526665fac4db0f94462a7a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\ad60c9c03f526665fac4db0f94462a7a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\7a7cb6ded2af286f9362462033d53ae5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\7a7cb6ded2af286f9362462033d53ae5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\c5a41b16b9d22f89e2bf568bdf3ef708\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\c5a41b16b9d22f89e2bf568bdf3ef708\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\c17d3f03c334d812a0a9fcb2aebea1b3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\c17d3f03c334d812a0a9fcb2aebea1b3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\77a70cff4827a51b7279483f05b4dbea\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\77a70cff4827a51b7279483f05b4dbea\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\0dd2da18912bb5e36d368acf694001e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\0dd2da18912bb5e36d368acf694001e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\c2db235e79cd96d94cec819f3d7db4f4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\c2db235e79cd96d94cec819f3d7db4f4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\fd3715fa9fdf8d942bbe2ef89416f55b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\fd3715fa9fdf8d942bbe2ef89416f55b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\a20d89551fb01410acf0f7683fba16a9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\a20d89551fb01410acf0f7683fba16a9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\56ef611d5c5471c24ffee06065ddcc52\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\56ef611d5c5471c24ffee06065ddcc52\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\c096a330d423c0ec19ee26ba69a2d161\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\c096a330d423c0ec19ee26ba69a2d161\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\d9159dd0c463c44b380f3bd8c51a6690\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\d9159dd0c463c44b380f3bd8c51a6690\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\f7a3b4ebacc0c830a5e2e635b6a4cb04\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\f7a3b4ebacc0c830a5e2e635b6a4cb04\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\2c068eb4cfcee6ac8ff6a9ede6e98892\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\2c068eb4cfcee6ac8ff6a9ede6e98892\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\d69cd65a4306eb0256e6c9fc75352068\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\d69cd65a4306eb0256e6c9fc75352068\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\eebcde32e6a54fbcf8c90566fc8e9b15\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\eebcde32e6a54fbcf8c90566fc8e9b15\AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\6335414f697249c935461e04ad2c0dbe\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\6335414f697249c935461e04ad2c0dbe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\a56eb3f90296d2dd9ff71cf308db8c20\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\a56eb3f90296d2dd9ff71cf308db8c20\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\bb51a6c72d01c7b45534c84840af85fc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\bb51a6c72d01c7b45534c84840af85fc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\7fdbf2678997a589665a99c6f6732a9d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\7fdbf2678997a589665a99c6f6732a9d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\0dd67601be06d6efc03c2e70701ab00a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\0dd67601be06d6efc03c2e70701ab00a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\ac570eabb0b7ae314c8f8e0f378b9c03\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\ac570eabb0b7ae314c8f8e0f378b9c03\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\827e5a54f32144d2b87beec9057452a6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\827e5a54f32144d2b87beec9057452a6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\5efa9fa58eb920323042d600a3b234cc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\5efa9fa58eb920323042d600a3b234cc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\c9f94410f3743292a2267268a94af679\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\LENOVO\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\c9f94410f3743292a2267268a94af679\AndroidManifest.xml:20:5-44
+INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
+INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\cfw\Desktop\plb-maseter\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
+		ADDED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Git\plb-maseter\app\src\main\AndroidManifest.xml

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\cfw\\Desktop\\plb-maseter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "E:\\Git\\plb-maseter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\cfw\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\d97b69690b495da61a7f9c660667917a\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\b88b847f86f735270d1c5b92b00e25a6\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\cfw\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\46e8d85d0019780e1bcc5737c7848869\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\c17d3f03c334d812a0a9fcb2aebea1b3\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

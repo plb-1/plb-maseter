@@ -914,6 +914,7 @@ drawable btn_border
 drawable btn_delete
 drawable btn_settlement
 drawable button_download
+drawable checkbox
 drawable checkbox_productinfo_style
 drawable ck_all
 drawable drawable_selector
@@ -962,6 +963,8 @@ drawable tdy_back_radius_trtl_3
 drawable tdy_home_border
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable weixuanzhong
+drawable xuanzhong
 id ALT
 id CTRL
 id Deliverystatus
@@ -1095,6 +1098,8 @@ id f1
 id f2
 id f3
 id f4
+id fanhui1
+id fanhui2
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1193,7 +1198,6 @@ id item_right_menu_market_text
 id item_spinner
 id item_touch_helper_previous_elevation
 id iv
-id iv_back
 id iv_child
 id iv_exit
 id iv_payment
@@ -1315,17 +1319,12 @@ id right
 id right_icon
 id right_menu_gridview
 id right_side
-id rl_back
-id rl_collection
 id rl_dataManagement
-id rl_feedback
 id rl_myOrder
 id rl_parameter
 id rl_setting
 id rl_subscription
 id rl_title
-id rl_update
-id rl_version
 id round
 id rv_home
 id screen
@@ -1467,6 +1466,7 @@ id title_template
 id top
 id topPanel
 id total
+id tuichu1
 id tv
 id tvPostPrice
 id tv_child
@@ -2087,6 +2087,7 @@ style Base_Widget_AppCompat_TextView_SpinnerItem
 style Base_Widget_AppCompat_Toolbar
 style Base_Widget_AppCompat_Toolbar_Button_Navigation
 style CheckBoXTheme
+style CustomCheckboxTheme
 style MyCheckBox
 style Platform_AppCompat
 style Platform_AppCompat_Light
