@@ -12,22 +12,22 @@
         android:layout_below="@id/head"
         android:layout_alignParentStart="true"
         android:layout_marginTop="0dp"
-        android:background="#fbfbfb"
+        android:background="#ffffff"
         android:orientation="horizontal">
 
         <ListView
             android:id="@+id/list_view"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="#ffffff"
+            android:background="#F7F7F7"
             android:layout_weight="1"
             android:listSelector="@drawable/listviewselector"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:divider="#00000000"
             android:scrollbars="none" />
 
-        <View
-            android:layout_width="1dp"
-            android:layout_height="wrap_content"
-            android:background="#cdcdcd" />
+
 
         <ScrollView
             android:layout_width="0dp"
@@ -51,6 +51,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="副食品"
+                        android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:textColor="#000"
                         android:paddingTop="10dp"
@@ -71,7 +72,7 @@
                 <RelativeLayout
                     android:id="@+id/relative2"
                     android:layout_width="match_parent"
-                    android:layout_height="190dp"
+                    android:layout_height="210dp"
                     android:layout_below="@id/relative1">
 
                     <GridView
@@ -79,7 +80,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:columnWidth="80dp"
-                        android:layout_marginLeft="5dp"
                         android:numColumns="3"
                         android:stretchMode="spacingWidthUniform">
 
@@ -92,7 +92,7 @@
                     android:layout_height="1dp"
                     android:layout_below="@id/relative2"
                     android:layout_marginTop="10dp"
-                    android:background="#7a7a7a" />
+                    android:background="#ffffff" />
 
 
                 <RelativeLayout
@@ -108,6 +108,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="干果类"
+                        android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:textColor="#000"
                         android:paddingTop="10dp"
@@ -128,7 +129,7 @@
                 <RelativeLayout
                     android:id="@+id/relative4"
                     android:layout_width="match_parent"
-                    android:layout_height="190dp"
+                    android:layout_height="210dp"
                     android:layout_below="@id/relative3">
 
                     <GridView
@@ -136,7 +137,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:columnWidth="80dp"
-                        android:layout_marginLeft="5dp"
                         android:numColumns="3"
                         android:stretchMode="spacingWidthUniform">
 
@@ -149,7 +149,7 @@
                     android:layout_height="1dp"
                     android:layout_below="@id/relative4"
                     android:layout_marginTop="10dp"
-                    android:background="#7a7a7a" />
+                    android:background="#ffffff" />
 
                 <RelativeLayout
                     android:id="@+id/relative5"
@@ -164,6 +164,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="滋补类"
+                        android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:textColor="#000"
                         android:paddingTop="10dp"
@@ -184,7 +185,7 @@
                 <RelativeLayout
                     android:id="@+id/relative6"
                     android:layout_width="match_parent"
-                    android:layout_height="190dp"
+                    android:layout_height="210dp"
                     android:layout_below="@id/relative5"
                     android:layout_marginTop="10dp">
 
@@ -193,7 +194,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:columnWidth="80dp"
-                        android:layout_marginLeft="5dp"
                         android:numColumns="3"
                         android:stretchMode="spacingWidthUniform">
 

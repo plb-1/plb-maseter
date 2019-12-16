@@ -1,29 +1,35 @@
 package com.example.plb.fragment;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.BaseAdapter;
 import android.widget.Button;
 
 
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 import com.example.plb.R;
 import com.example.plb.activity.DetailsActivity;
+import com.example.plb.adapter.MyAdapter;
 import com.example.plb.tdy.custom.ViewPageLinearLayout;
 import com.example.plb.tdy.shop.rank1;
 import com.example.plb.tdy.shop.rank2;
@@ -43,15 +49,17 @@ public class ShopFragment extends Fragment{
     private ViewPager mviewPager;
     private ViewPageLinearLayout mIndicator;
 
-    private List<String> mTitles = Arrays.asList("1","2");
+    private List<String> qlist = Arrays.asList("1","2");
+
     private List<Fragment> mContents = new ArrayList<Fragment>();
     private FragmentPagerAdapter madapter;
 
-
+    private List<String> mlist = new ArrayList<>();
     private View view;
     private Button button;
     private ListView listView;
-    private ArrayAdapter<String> mAdapter;
+    //private ArrayAdapter<String> mAdapter;
+
     private List<String> datas= Arrays.asList("1号门店","2号门店","3号门店","4号门店","5号门店","6号门店","7号门店",
             "8号门店","9号门店","10号门店","11号门店");
 
@@ -69,13 +77,20 @@ public class ShopFragment extends Fragment{
         //跳转到详情页
 
         listView=view.findViewById(R.id.list_view);
-        mAdapter=new ArrayAdapter(getContext(),android.R.layout.simple_list_item_1,datas);
-        listView.setAdapter(mAdapter);
+//        mAdapter = new ArrayAdapter(getContext(),R.layout.shopitem, datas);
+
+        final ShapAdaper adapter =new ShapAdaper();
+        listView.setAdapter(adapter);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String data = datas.get(position);
                 Toast.makeText(getContext(),data, Toast.LENGTH_LONG).show();
+                adapter.setCurrentItem(position);
+                adapter.setClick(true);
+                adapter.notifyDataSetChanged();
+
                 if(position%2==0){
                     Log.e("偶数","t");
 //                    init_c();
@@ -148,7 +163,6 @@ public class ShopFragment extends Fragment{
     }
 
 
-
     public void init(){
         int icno[]={R.mipmap.adg,R.mipmap.bawanniujin,R.mipmap.fangbianmian,R.mipmap.huotui,R.mipmap.aerbeisi,R.mipmap.qiaokeli};
         String name[]={"AD钙","霸王牛筋","方便面","火腿肠","阿尔卑斯","巧克力"};
@@ -216,6 +230,57 @@ public class ShopFragment extends Fragment{
             map.put("img",icno[i]);
             map.put("text",name[i]);
             getDataList.add(map);
+        }
+    }
+
+
+    class ShapAdaper extends BaseAdapter{
+        private int mCurrentItem=0;
+        private boolean isClick=false;
+
+        @Override
+        public int getCount() {
+            return datas.size();
+        }
+
+        @Override
+        public Object getItem(int i) {
+            return datas.get(i);
+        }
+
+        @Override
+        public long getItemId(int i) {
+            return i;
+        }
+
+        @Override
+        public View getView(int i, View view, ViewGroup viewGroup) {
+            if (view==null){
+                view= LayoutInflater.from(getActivity()).inflate(R.layout.shopitem,null);
+            }
+
+            TextView textView= (TextView) view.findViewById(R.id.text);
+            //LinearLayout parent= (LinearLayout) view.findViewById(R.id.ll_parent);
+
+            textView.setText(datas.get(i));
+
+            if (mCurrentItem==i&&isClick){
+                //parent.setBackgroundColor(Color.parseColor("#3F51B5"))
+                // 点击改变的颜色;
+                textView.setTextColor(Color.parseColor("#FF4081"));
+            }else{
+                //parent.setBackgroundColor(Color.parseColor("#ffffff"));
+                textView.setTextColor(Color.parseColor("#000000"));
+            }
+
+            return view;
+        }
+        public void setCurrentItem(int currentItem){
+            this.mCurrentItem=currentItem;
+        }
+
+        public void setClick(boolean click){
+            this.isClick=click;
         }
     }
 }
