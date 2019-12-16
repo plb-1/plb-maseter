@@ -23,7 +23,10 @@ import com.example.plb.R;
 import com.example.plb.Utils.NetWorkUtils;
 import com.example.plb.Utils.TimeCount;
 
-public class RegisteredActivity extends AppCompatActivity implements View.OnClickListener {
+import java.io.IOException;
+import java.util.HashMap;
+
+public class RegisteredActivity extends AppCompatActivity implements View.OnClickListener, TextWatcher {
 
 
     private EditText regAccount;
@@ -36,7 +39,7 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
     private ImageView exit;
 
     private String yzCodeURL = "http://49.233.148.75/RetailManager/sms";
-    private String zcURL = "http://49.233.148.75/RetailManager/registerUser";
+    private String regURL = "http://49.233.148.75/RetailManager/registerUser";
     private String TAG = "RegisteredActivity";
 
     private TimeCount time;
@@ -63,46 +66,12 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
     }
 
     private void initEven() {
-        regAccount.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                if (s.toString().length() != 0 && !"".equals(s)) {
-                    regBtn.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                } else {
-                    regBtn.setBackgroundColor(getResources().getColor(R.color.login_btn_gray));
-                }
-            }
-        });
-        regPhone.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                if (s.toString().length() != 0 && !"".equals(s)) {
-                    regBtn.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                } else {
-                    regBtn.setBackgroundColor(getResources().getColor(R.color.login_btn_gray));
-                }
-            }
-        });
+        //根据输入框状态 改变按钮颜色
+        regAccount.addTextChangedListener(this);
+        regPhone.addTextChangedListener(this);
+        regYzcode.addTextChangedListener(this);
+        regPwd.addTextChangedListener(this);
+        regOkPwd.addTextChangedListener(this);
     }
 
     private void initView() {
@@ -137,12 +106,41 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
                     if (regAccount.getText().length() > 0 && regPhone.getText().length() > 0 && regYzcode.getText().length() > 0 &&
                             regPwd.getText().length() > 0 && regOkPwd.getText().length() > 0) {
                         if (requestContent.equals(regYzcode.getText().toString())) {
-                            String zcPaser = "{userName:"+regAccount.getText().toString()+",phone:"+regPhone.getText().toString()+",authCode:"+
-                                    regYzcode.getText().toString()+",password:"+ regPwd.getText().toString()+",okPassword:"+regOkPwd.getText().toString()+"}";
-                            Log.e(TAG, "onClick: zcPaser ---> "+zcPaser);
+                            if (regAccount.getText().length()>3&&regAccount.getText().length()<12) {
+                                if (isMobileNumber(regPhone.getText().toString())) {
+                                    if (regPwd.getText().length()>5&&regPwd.getText().length()<12) {
+                                        if (regPwd.getText().toString().equals(regOkPwd.getText().toString())) {
+                                            HashMap regMap = new HashMap();
+                                            regMap.put("userName",regAccount.getText().toString());
+                                            regMap.put("phone",regPhone.getText().toString());
+                                            regMap.put("authCode",regYzcode.getText().toString());
+                                            regMap.put("password",regPwd.getText().toString());
+                                            regMap.put("okPassword",regOkPwd.getText().toString());
 
-                            String retrunMsg = NetWorkUtils.post(zcURL,zcPaser);
-                            Log.e(TAG, "onClick: retrunMsg ---> "+retrunMsg);
+                                            new Thread(new Runnable() {
+                                                @Override
+                                                public void run() {
+                                                    String retrunMsg = "";
+                                                    try {
+                                                        retrunMsg = NetWorkUtils.postFrom(regURL,regMap);
+                                                    } catch (IOException e) {
+                                                        e.printStackTrace();
+                                                    }
+                                                    Log.e(TAG, "onClick: retrunMsg ---> "+retrunMsg);
+                                                }
+                                            }).start();
+                                        }else {
+                                            Toast.makeText(RegisteredActivity.this,"两次输入密码不匹配",Toast.LENGTH_SHORT).show();
+                                        }
+                                    }else {
+                                        Toast.makeText(RegisteredActivity.this,"密码必须是6-12个字符",Toast.LENGTH_SHORT).show();
+                                    }
+                                }else {
+                                    Toast.makeText(RegisteredActivity.this,"手机号码格式不正确",Toast.LENGTH_SHORT).show();
+                                }
+                            }else {
+                                Toast.makeText(RegisteredActivity.this,"店主名字格式不正确（必须是4-12个字符）",Toast.LENGTH_SHORT).show();
+                            }
                         }
                         requestContent = "";
                     } else {
@@ -159,7 +157,14 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
                         public void run() {
                             if (isMobileNumber(regPhone.getText().toString())) {
                                 time.start();
-                                requestContent = NetWorkUtils.get(yzCodeURL, regPhone.getText().toString());
+                                try {
+                                    requestContent = NetWorkUtils.get(yzCodeURL, regPhone.getText().toString());
+                                    if (requestContent.equals("注册成功")) {
+                                        Toast.makeText(RegisteredActivity.this,"注册成功",Toast.LENGTH_SHORT).show();
+                                    }
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
                                 Log.e(TAG, requestContent);
                             }else {
                                 handler.sendEmptyMessage(1);
@@ -177,5 +182,24 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
     public static boolean isMobileNumber(String mobiles) {
         String telRegex = "^((13[0-9])|(15[^4])|(18[0-9])|(17[0-8])|(147,145))\\d{8}$";
         return !TextUtils.isEmpty(mobiles) && mobiles.matches(telRegex);
+    }
+
+    @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+    }
+
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+    }
+
+    @Override
+    public void afterTextChanged(Editable s) {
+        if (s.toString().length() != 0 && !"".equals(s)) {
+            regBtn.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        } else {
+            regBtn.setBackgroundColor(getResources().getColor(R.color.login_btn_gray));
+        }
     }
 }

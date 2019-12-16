@@ -61,7 +61,7 @@
                 android:id="@+id/login_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="手机/账户"
+                android:hint="用户名"
                 android:background="@null"
                 android:maxLines="1"
                 android:imeOptions="actionNext"

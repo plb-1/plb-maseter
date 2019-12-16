@@ -2,6 +2,12 @@ package com.example.plb.Utils;
 
 import android.util.Log;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import okhttp3.FormBody;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -33,7 +39,7 @@ public class NetWorkUtils {
         return result;
     }
 
-    public static String get(String url, String parse){
+    public static String get(String url, String parse) throws IOException {
         String result = "";
         String path = url+"/"+parse;
 
@@ -41,13 +47,30 @@ public class NetWorkUtils {
         try {
             Request request = new Request.Builder()
                     .url(path)
-                    .get()
                     .build();
             Response response = client.newCall(request).execute();
             result = response.body().string();
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         return result;
+    }
+
+    public static String postFrom(String url,HashMap<String,String> params) throws IOException {
+        List<String> keys = new ArrayList<>();
+        List<String> values = new ArrayList<>();
+        for(Object key : params.keySet()){
+            keys.add(key.toString());
+            values.add(params.get(key));
+        }
+        FormBody formBody = new FormBody(keys,values);
+
+        Request request = new Request.Builder()
+                .url(url)
+                .post(formBody)
+                .build();
+        Response response = client.newCall(request).execute();
+        return response.body().string();
     }
 }
