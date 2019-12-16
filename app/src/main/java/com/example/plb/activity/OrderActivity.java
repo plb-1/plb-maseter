@@ -62,13 +62,13 @@ public class OrderActivity extends AppCompatActivity implements View.OnClickList
         vp_viewPager.setCurrentItem(CurrentItem);  //初始化显示第一个页面
         if(CurrentItem==0){
             tv_stayPayment.setTextColor(Color.parseColor("#ffffff"));  //选中第一个颜色的字体
-            tv_stayPayment.setBackgroundColor(Color.parseColor("#ed6a1a"));  //选中第一个颜色的背景
+            //tv_stayPayment.setBackgroundColor(Color.parseColor("#ed6a1a"));  //选中第一个颜色的背景
         }else if(CurrentItem==1){
             tv_hasPayment.setTextColor(Color.parseColor("#ffffff"));  //选中第一个颜色的字体
-            tv_hasPayment.setBackgroundColor(Color.parseColor("#ed6a1a"));  //选中第一个颜色的背景
+           // tv_hasPayment.setBackgroundColor(Color.parseColor("#ed6a1a"));  //选中第一个颜色的背景
         }else{
             tv_hasComplete.setTextColor(Color.parseColor("#ffffff"));  //选中第一个颜色的字体
-            tv_hasComplete.setBackgroundColor(Color.parseColor("#ed6a1a"));  //选中第一个颜色的背景
+          //  tv_hasComplete.setBackgroundColor(Color.parseColor("#ed6a1a"));  //选中第一个颜色的背景
         }
     }
 
@@ -148,21 +148,21 @@ public class OrderActivity extends AppCompatActivity implements View.OnClickList
             tv_stayPayment.setTextColor(Color.parseColor("#ffffff"));
             tv_stayPayment.setBackgroundColor(Color.parseColor("#ed6a1a"));
             tv_hasPayment.setTextColor(Color.parseColor("#000000"));
-            tv_hasPayment.setBackgroundColor(Color.parseColor("#bdb8b4"));
+            tv_hasPayment.setBackgroundColor(Color.parseColor("#ffffff"));
             tv_hasComplete.setTextColor(Color.parseColor("#000000"));
-            tv_hasComplete.setBackgroundColor(Color.parseColor("#bdb8b4"));
+            tv_hasComplete.setBackgroundColor(Color.parseColor("#ffffff"));
         } else if (position == 1) {
             tv_stayPayment.setTextColor(Color.parseColor("#000000"));
-            tv_stayPayment.setBackgroundColor(Color.parseColor("#bdb8b4"));
+            tv_stayPayment.setBackgroundColor(Color.parseColor("#ffffff"));
             tv_hasPayment.setTextColor(Color.parseColor("#ffffff"));
             tv_hasPayment.setBackgroundColor(Color.parseColor("#ed6a1a"));
             tv_hasComplete.setTextColor(Color.parseColor("#000000"));
-            tv_hasComplete.setBackgroundColor(Color.parseColor("#bdb8b4"));
+            tv_hasComplete.setBackgroundColor(Color.parseColor("#ffffff"));
         } else if (position == 2) {
             tv_stayPayment.setTextColor(Color.parseColor("#000000"));
-            tv_stayPayment.setBackgroundColor(Color.parseColor("#bdb8b4"));
+            tv_stayPayment.setBackgroundColor(Color.parseColor("#ffffff"));
             tv_hasPayment.setTextColor(Color.parseColor("#000000"));
-            tv_hasPayment.setBackgroundColor(Color.parseColor("#bdb8b4"));
+            tv_hasPayment.setBackgroundColor(Color.parseColor("#ffffff"));
             tv_hasComplete.setTextColor(Color.parseColor("#ffffff"));
             tv_hasComplete.setBackgroundColor(Color.parseColor("#ed6a1a"));
         }

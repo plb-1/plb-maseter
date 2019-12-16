@@ -24,6 +24,7 @@
         android:layout_height="50dp">
         <CheckBox
             android:text="全选"
+          style="@style/CustomCheckboxTheme"
             android:id="@+id/ckdall"
             android:theme="@style/MyCheckBox"
             android:layout_weight="1"

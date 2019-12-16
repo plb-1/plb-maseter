@@ -47,12 +47,12 @@ public class PersonalFragment extends Fragment implements View.OnClickListener{
         //
         LinearLayout rl_dataManagement = view.findViewById(R.id.rl_dataManagement);
       LinearLayout id_Bypayment = view.findViewById(R.id.id_Bypayment);
-      LinearLayout rl_collection = view.findViewById(R.id.rl_collection);
+
       LinearLayout rl_setting = view.findViewById(R.id.rl_setting);
       //
 
         rl_setting.setOnClickListener(this);
-        rl_collection.setOnClickListener(this);
+
         rl_dataManagement.setOnClickListener(this);
 
         id_Bypayment.setOnClickListener(new View.OnClickListener() {
@@ -78,9 +78,6 @@ public class PersonalFragment extends Fragment implements View.OnClickListener{
                 break;
             case R.id.rl_subscription://登录--
                 startActivity(new Intent(getActivity(), LoginPageActivity.class));
-                break;
-            case R.id.rl_collection://收藏--
-                startActivity(new Intent(getActivity(), StoreCertificationActivity.class));
                 break;
             case R.id.rl_dataManagement://消息--
                 startActivity(new Intent(getActivity(), InformationActivity.class));

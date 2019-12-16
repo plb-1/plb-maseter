@@ -58,7 +58,9 @@
         <activity android:name=".activity.StoreCertificationActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".activity.ProductInfoActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".activity.InformationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.InformationActivity" android:screenOrientation="portrait"
+          android:theme="@android:style/Theme.NoTitleBar"
+          />
         <activity android:name=".tdy.Detailedlist.tdy_daifukuan" android:screenOrientation="portrait"/>
         <activity android:name=".tdy.Detailedlist.tdy_yifukuan" android:screenOrientation="portrait"/>
         <activity android:name=".tdy.Detailedlist.tdy_yiwanchen" android:screenOrientation="portrait"/>
