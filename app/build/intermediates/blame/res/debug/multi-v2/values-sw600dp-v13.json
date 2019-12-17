@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Git\\plb-maseter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "E:\\Git\\git Help\\plb-maseter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\b88b847f86f735270d1c5b92b00e25a6\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\65060275a2c208958b7d5593dac71b51\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "E:\\Git\\plb-maseter\\app\\src\\main\\res\\values-sw600dp\\dimens.xml",
+                    "source": "E:\\Git\\git Help\\plb-maseter\\app\\src\\main\\res\\values-sw600dp\\dimens.xml",
                     "from": {
                         "startLines": "2,3,10,23,4,31,39,5,21,11,14,15,16,18,19,22,8,24,9,20,34,35,38,37,36,12,6,25,7,13,30,17,33,32,27,26,28,29",
                         "startColumns": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1",

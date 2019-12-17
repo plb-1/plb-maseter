@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Git\\plb-maseter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw811dp-v13\\values-sw811dp-v13.xml",
+            "outputFile": "E:\\Git\\git Help\\plb-maseter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw811dp-v13\\values-sw811dp-v13.xml",
             "map": [
                 {
-                    "source": "E:\\Git\\plb-maseter\\app\\src\\main\\res\\values-sw811dp\\dimens.xml",
+                    "source": "E:\\Git\\git Help\\plb-maseter\\app\\src\\main\\res\\values-sw811dp\\dimens.xml",
                     "from": {
                         "startLines": "2,3,10,23,4,31,39,5,21,11,14,15,16,18,19,22,8,24,9,20,34,35,38,37,36,12,6,25,7,13,30,17,33,32,27,26,28,29",
                         "startColumns": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1",

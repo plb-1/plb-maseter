@@ -1,7 +1,9 @@
 package com.example.plb.fragment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,6 +15,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
@@ -22,6 +26,7 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -46,6 +51,7 @@ import java.util.Map;
  * 店铺
  */
 public class ShopFragment extends Fragment{
+    private RelativeLayout title_home;
     private ViewPager mviewPager;
     private ViewPageLinearLayout mIndicator;
 
@@ -73,12 +79,32 @@ public class ShopFragment extends Fragment{
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//5.0及以上
+            Window window = getActivity().getWindow();
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
+                    | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN  //设置为全屏
+                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                    |View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);//状态栏字体颜色设置为黑色这个是Android 6.0才出现的属性   默认是白色
+            //需要设置这个 flag 才能调用 setStatusBarColor 来设置状态栏颜色
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(Color.TRANSPARENT);//设置为透明色
+            window.setNavigationBarColor(Color.TRANSPARENT);
+        }else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {//4.4到5.0
+            WindowManager.LayoutParams localLayoutParams = getActivity().getWindow().getAttributes();
+            localLayoutParams.flags = (WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | localLayoutParams.flags);
+        }
+
         view = inflater.inflate(R.layout.fragment_shop,null);
         //跳转到详情页
 
         listView=view.findViewById(R.id.list_view);
-//        mAdapter = new ArrayAdapter(getContext(),R.layout.shopitem, datas);
-
+        title_home =view.findViewById(R.id.title_home);
+        //设置状态栏
+        int statusBarHeight = getStatusBarHeight(getContext());
+        title_home.setPadding(0, statusBarHeight, 0, 0);
+        //自定义adapter
         final ShapAdaper adapter =new ShapAdaper();
         listView.setAdapter(adapter);
 
@@ -161,7 +187,15 @@ public class ShopFragment extends Fragment{
         super.onActivityCreated(savedInstanceState);
 
     }
-
+    private static int getStatusBarHeight(Context context) {
+        int result = 0;
+        int resourceId = context.getResources().getIdentifier(
+                "status_bar_height", "dimen", "android");
+        if (resourceId > 0) {
+            result = context.getResources().getDimensionPixelSize(resourceId);
+        }
+        return result;
+    }
 
     public void init(){
         int icno[]={R.mipmap.adg,R.mipmap.bawanniujin,R.mipmap.fangbianmian,R.mipmap.huotui,R.mipmap.aerbeisi,R.mipmap.qiaokeli};
@@ -267,10 +301,10 @@ public class ShopFragment extends Fragment{
             if (mCurrentItem==i&&isClick){
                 //parent.setBackgroundColor(Color.parseColor("#3F51B5"))
                 // 点击改变的颜色;
-                textView.setTextColor(Color.parseColor("#FF4081"));
+                textView.setTextColor(Color.parseColor("#ffffff"));
             }else{
                 //parent.setBackgroundColor(Color.parseColor("#ffffff"));
-                textView.setTextColor(Color.parseColor("#000000"));
+                textView.setTextColor(Color.parseColor("#f17109"));
             }
 
             return view;

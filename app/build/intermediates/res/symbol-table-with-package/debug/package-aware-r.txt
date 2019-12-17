@@ -901,6 +901,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable anim_loading
 drawable bg_btn_style_white
 drawable bg_edittext_selector
 drawable bgcolor_radios
@@ -925,7 +926,6 @@ drawable edittext_registered
 drawable ellipse
 drawable fillet
 drawable fillet1
-drawable fillrt2
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable jiaru_jhd_icon
@@ -1084,7 +1084,6 @@ id dot1
 id dot2
 id dot3
 id dot4
-id editText
 id edit_query
 id end
 id end_padder
@@ -1183,13 +1182,14 @@ id id_tv_totalCount_jiesuan
 id id_tv_totalPrice
 id ifRoom
 id image
-id imageView
-id imageView2
 id image_1
 id image_2
 id image_3
 id image_4
 id img
+id immersion_fits_layout_overlap
+id immersion_navigation_bar_view
+id immersion_status_bar_view
 id imported
 id info
 id invisible
@@ -1214,6 +1214,7 @@ id line3
 id line_bottom
 id line_head
 id linear
+id linearLayout
 id linearlayout2
 id listMode
 id list_item
@@ -1290,6 +1291,7 @@ id productinfo_shop_jinkou
 id productinfo_shop_name
 id productinfo_shop_price
 id productinfo_shop_price_layout
+id progressBar1
 id progress_circular
 id progress_horizontal
 id radio
@@ -1401,7 +1403,6 @@ id shopping_car_btn
 id shopprice
 id shoptitle
 id shortcut
-id shous
 id showCustom
 id showHome
 id showTitle
@@ -1454,7 +1455,6 @@ id text1
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
 id texts
 id thisprice
 id thisstate
@@ -1476,6 +1476,7 @@ id tv_hasPayment
 id tv_hot_home
 id tv_items_child
 id tv_items_child_desc
+id tv_message
 id tv_search_home
 id tv_shop_money
 id tv_stayPayment
@@ -1555,6 +1556,7 @@ layout activity_setting
 layout activity_store_certification
 layout child_shopcart
 layout commodity_item
+layout dialog_layout
 layout fragment_basic_info
 layout fragment_details_details
 layout fragment_details_shop
@@ -1744,6 +1746,7 @@ mipmap left_arrow_black
 mipmap left_exit
 mipmap leshi
 mipmap list
+mipmap loading
 mipmap location_gray
 mipmap location_white
 mipmap login_phone
