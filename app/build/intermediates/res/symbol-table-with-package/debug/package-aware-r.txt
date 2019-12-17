@@ -923,6 +923,9 @@ drawable edittext_productinfo_focused
 drawable edittext_productinfo_normal
 drawable edittext_registered
 drawable ellipse
+drawable fillet
+drawable fillet1
+drawable fillrt2
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable jiaru_jhd_icon
@@ -1081,6 +1084,7 @@ id dot1
 id dot2
 id dot3
 id dot4
+id editText
 id edit_query
 id end
 id end_padder
@@ -1108,7 +1112,6 @@ id firm_order_settlement
 id firm_sum
 id firm_txt
 id firm_txt_sum
-id five_shop
 id food
 id foodName1
 id foodName2
@@ -1116,8 +1119,6 @@ id foodName3
 id forever
 id forget_password
 id fragment_container
-id frame1
-id frame2
 id fuhao
 id glide_custom_view_target_tag
 id gone
@@ -1182,6 +1183,8 @@ id id_tv_totalCount_jiesuan
 id id_tv_totalPrice
 id ifRoom
 id image
+id imageView
+id imageView2
 id image_1
 id image_2
 id image_3
@@ -1220,6 +1223,7 @@ id listview1
 id listview_home
 id ll_address
 id ll_change_num
+id ll_parent
 id login_btm
 id login_loginbtn
 id login_password
@@ -1397,6 +1401,7 @@ id shopping_car_btn
 id shopprice
 id shoptitle
 id shortcut
+id shous
 id showCustom
 id showHome
 id showTitle
@@ -1449,6 +1454,7 @@ id text1
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
 id texts
 id thisprice
 id thisstate
@@ -1609,6 +1615,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout servercenter_item
 layout servicecentre
+layout shopitem
 layout sppinner_item
 layout stop_head
 layout support_simple_spinner_dropdown_item
