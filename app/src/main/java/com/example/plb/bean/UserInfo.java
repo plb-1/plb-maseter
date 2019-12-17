@@ -9,6 +9,7 @@ public class UserInfo {
     private static UserInfo userInfo = null;
     private String userName = "";
     private String passWord = "";
+    private String userImg = "";
 
     private UserInfo(){}
 
@@ -37,6 +38,14 @@ public class UserInfo {
 
     public void setPassWord(String passWord) {
         this.passWord = passWord;
+    }
+
+    public String getUserImg() {
+        return userImg;
+    }
+
+    public void setUserImg(String userImg) {
+        this.userImg = userImg;
     }
 
     public boolean hasUserInfo(){

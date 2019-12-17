@@ -65,10 +65,10 @@ public class OrderActivity extends AppCompatActivity implements View.OnClickList
             //tv_stayPayment.setBackgroundColor(Color.parseColor("#ed6a1a"));  //选中第一个颜色的背景
         }else if(CurrentItem==1){
             tv_hasPayment.setTextColor(Color.parseColor("#ffffff"));  //选中第一个颜色的字体
-           // tv_hasPayment.setBackgroundColor(Color.parseColor("#ed6a1a"));  //选中第一个颜色的背景
+            // tv_hasPayment.setBackgroundColor(Color.parseColor("#ed6a1a"));  //选中第一个颜色的背景
         }else{
             tv_hasComplete.setTextColor(Color.parseColor("#ffffff"));  //选中第一个颜色的字体
-          //  tv_hasComplete.setBackgroundColor(Color.parseColor("#ed6a1a"));  //选中第一个颜色的背景
+            //  tv_hasComplete.setBackgroundColor(Color.parseColor("#ed6a1a"));  //选中第一个颜色的背景
         }
     }
 

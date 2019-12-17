@@ -50,10 +50,10 @@ public class MyAdapter extends BaseAdapter {
     // 初始化isSelected的数据
     private void initDate() {
         for (int i = 0; i < list.size(); i++) {
-                getIsSelected().put(i, false);
-                if(list.get(i).getIspayment()==2){
-                    shopstate = true;
-                }
+            getIsSelected().put(i, false);
+            if(list.get(i).getIspayment()==2){
+                shopstate = true;
+            }
         }
         shopname.clear();
         shopprice.clear();
@@ -138,7 +138,7 @@ public class MyAdapter extends BaseAdapter {
         holder.img.setImageResource(R.mipmap.example_1);
         holder.thisprice.setText(list.get(position).getshopprice()+"");
         holder.buynum.setText(list.get(position).getShopbynum()+"");
-    //    holder.shopid.setText(list.get(position).getShopid()+"");
+        //    holder.shopid.setText(list.get(position).getShopid()+"");
         // 根据isSelected来设置checkbox的选中状况
         //Log.e("getIsSelected", getIsSelected().get(position)+"" );
         holder.cb.setChecked(getIsSelected().get(position));

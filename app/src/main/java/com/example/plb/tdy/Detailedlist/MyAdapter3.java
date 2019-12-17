@@ -123,16 +123,16 @@ public class MyAdapter3 extends BaseAdapter {
             // 取出holder
             holder = (ViewHolder) convertView.getTag();
         }
-            holder.thisstate.setBackgroundResource(R.drawable.bgcolor_radios2);
-            holder.thisstate.setText("以付款");
-            holder.Deliverystatus.setBackgroundResource(R.drawable.bgcolor_radios2);
-            holder.Deliverystatus.setText("以签收");
+        holder.thisstate.setBackgroundResource(R.drawable.bgcolor_radios2);
+        holder.thisstate.setText("以付款");
+        holder.Deliverystatus.setBackgroundResource(R.drawable.bgcolor_radios2);
+        holder.Deliverystatus.setText("以签收");
         // 设置list中TextView的显示
         holder.name.setText(list.get(position).getName());
         holder.img.setImageResource(R.mipmap.example_1);
         holder.thisprice.setText(list.get(position).getshopprice()+"");
         holder.buynum.setText(list.get(position).getShopbynum()+"");
-     //   holder.shopid.setText(list.get(position).getShopid()+"");
+        //   holder.shopid.setText(list.get(position).getShopid()+"");
         // 根据isSelected来设置checkbox的选中状况
         //Log.e("getIsSelected", getIsSelected().get(position)+"" );
         holder.cb.setChecked(getIsSelected().get(position));
