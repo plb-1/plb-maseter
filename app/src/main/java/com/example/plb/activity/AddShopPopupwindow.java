@@ -33,10 +33,13 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.plb.R;
 import com.example.plb.adapter.DetailAdapter;
+<<<<<<< HEAD
 import com.example.plb.bean.ShopBean;
 import com.example.plb.database.ShopDatabase;
 import com.example.plb.fragment.DetailsShopFragment;
 import com.example.plb.fragment.ShopFragment;
+=======
+>>>>>>> 12.18 Ls与仓库重新建立连接
 import com.example.plb.tdy.Sqlite.Constant;
 import com.example.plb.tdy.Sqlite.MysqliteHelper;
 import com.example.plb.tdy.Sqlite.bean.shopinfos;

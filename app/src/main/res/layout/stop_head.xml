@@ -68,4 +68,77 @@
         </RelativeLayout>
     </RelativeLayout>
 
+=======
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:src="@mipmap/location_white"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="五一市场"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView"
+                android:background="@drawable/fillet"
+                android:hint="请输入商品信息"
+                android:paddingLeft="50dp"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editText"
+                android:layout_centerVertical="true"
+                android:paddingTop="2dp"
+                android:paddingLeft="13dp"
+                android:src="@mipmap/search"
+                android:id="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/shous"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignEnd="@+id/editText"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/fillet1"
+                android:paddingBottom="3dp"
+                android:text="搜索"
+                android:textStyle="bold"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+>>>>>>> 12.18 Ls与仓库重新建立连接
 </LinearLayout>

@@ -28,6 +28,13 @@ android {
         targetCompatibility 1.8
     }
     buildToolsVersion '28.0.3'
+
+    //指定动态库路径
+    sourceSets {
+        main {
+            jniLibs.srcDir 'src/main/libs'
+        }
+    }
 }
 
 dependencies {

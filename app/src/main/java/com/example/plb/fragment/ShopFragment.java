@@ -1,9 +1,14 @@
 package com.example.plb.fragment;
 
+<<<<<<< HEAD
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
+=======
+import android.content.Intent;
+import android.graphics.Color;
+>>>>>>> 12.18 Ls与仓库重新建立连接
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -15,8 +20,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 import android.view.Window;
 import android.view.WindowManager;
+=======
+>>>>>>> 12.18 Ls与仓库重新建立连接
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
@@ -26,7 +34,10 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+<<<<<<< HEAD
 import android.widget.RelativeLayout;
+=======
+>>>>>>> 12.18 Ls与仓库重新建立连接
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -51,7 +62,10 @@ import java.util.Map;
  * 店铺
  */
 public class ShopFragment extends Fragment{
+<<<<<<< HEAD
     private RelativeLayout title_home;
+=======
+>>>>>>> 12.18 Ls与仓库重新建立连接
     private ViewPager mviewPager;
     private ViewPageLinearLayout mIndicator;
 
@@ -79,6 +93,7 @@ public class ShopFragment extends Fragment{
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+<<<<<<< HEAD
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//5.0及以上
             Window window = getActivity().getWindow();
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
@@ -96,15 +111,22 @@ public class ShopFragment extends Fragment{
             localLayoutParams.flags = (WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | localLayoutParams.flags);
         }
 
+=======
+>>>>>>> 12.18 Ls与仓库重新建立连接
         view = inflater.inflate(R.layout.fragment_shop,null);
         //跳转到详情页
 
         listView=view.findViewById(R.id.list_view);
+<<<<<<< HEAD
         title_home =view.findViewById(R.id.title_home);
         //设置状态栏
         int statusBarHeight = getStatusBarHeight(getContext());
         title_home.setPadding(0, statusBarHeight, 0, 0);
         //自定义adapter
+=======
+//        mAdapter = new ArrayAdapter(getContext(),R.layout.shopitem, datas);
+
+>>>>>>> 12.18 Ls与仓库重新建立连接
         final ShapAdaper adapter =new ShapAdaper();
         listView.setAdapter(adapter);
 
@@ -187,6 +209,7 @@ public class ShopFragment extends Fragment{
         super.onActivityCreated(savedInstanceState);
 
     }
+<<<<<<< HEAD
     private static int getStatusBarHeight(Context context) {
         int result = 0;
         int resourceId = context.getResources().getIdentifier(
@@ -196,6 +219,9 @@ public class ShopFragment extends Fragment{
         }
         return result;
     }
+=======
+
+>>>>>>> 12.18 Ls与仓库重新建立连接
 
     public void init(){
         int icno[]={R.mipmap.adg,R.mipmap.bawanniujin,R.mipmap.fangbianmian,R.mipmap.huotui,R.mipmap.aerbeisi,R.mipmap.qiaokeli};
@@ -301,10 +327,17 @@ public class ShopFragment extends Fragment{
             if (mCurrentItem==i&&isClick){
                 //parent.setBackgroundColor(Color.parseColor("#3F51B5"))
                 // 点击改变的颜色;
+<<<<<<< HEAD
                 textView.setTextColor(Color.parseColor("#ffffff"));
             }else{
                 //parent.setBackgroundColor(Color.parseColor("#ffffff"));
                 textView.setTextColor(Color.parseColor("#f17109"));
+=======
+                textView.setTextColor(Color.parseColor("#FF4081"));
+            }else{
+                //parent.setBackgroundColor(Color.parseColor("#ffffff"));
+                textView.setTextColor(Color.parseColor("#000000"));
+>>>>>>> 12.18 Ls与仓库重新建立连接
             }
 
             return view;
