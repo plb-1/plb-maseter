@@ -632,6 +632,7 @@ color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
 color selector_tab_text
+color setting_title
 color sienna
 color silver
 color skyblue
@@ -962,6 +963,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable per_selector
 drawable reg_yzcode_ll_bg
 drawable reg_yzcode_ll_gray_bg
 drawable search_home
@@ -1300,12 +1302,12 @@ id percent
 id personal_all_order
 id personal_daifahuo
 id personal_daifukuan
-id personal_goods_collection
 id personal_head_portrait
 id personal_help
 id personal_setting
 id personal_shipping_address
 id personal_shouhuo
+id personal_store_collection
 id personal_user_id
 id personal_user_name
 id phone
@@ -1400,6 +1402,7 @@ id shop_Sum
 id shop_address
 id shop_beginSum
 id shop_buyNum
+id shop_cart
 id shop_details_iv
 id shop_details_rl
 id shop_image1_home
@@ -1845,6 +1848,7 @@ mipmap sel_check
 mipmap sel_nor
 mipmap service
 mipmap setting
+mipmap setting_back
 mipmap shaixuan
 mipmap shezhi
 mipmap shizhong_home
@@ -1955,6 +1959,8 @@ string market2
 string myOrder
 string order
 string payment
+string per_user_id
+string per_user_name
 string personal
 string price
 string search_menu_title

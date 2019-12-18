@@ -94,7 +94,8 @@ public class LoginPageActivity extends AppCompatActivity implements View.OnClick
                             JSONObject jsonObject = new JSONObject(loginRrequset);
                             userInfo.setUserName(jsonObject.getString("userName"));
                             userInfo.setPassWord(jsonObject.getString("password"));
-                            userInfo.setUserImg(jsonObject.getString("userImage"));
+                            userInfo.setUserImg(jsonObject.getString("images"));
+                            userInfo.setUserId(jsonObject.getInt("id"));
 
                             handler.sendEmptyMessage(0);
                         }

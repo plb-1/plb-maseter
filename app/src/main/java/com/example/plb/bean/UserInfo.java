@@ -10,6 +10,15 @@ public class UserInfo {
     private String userName = "";
     private String passWord = "";
     private String userImg = "";
+    private int userId = 0;
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
 
     private UserInfo(){}
 

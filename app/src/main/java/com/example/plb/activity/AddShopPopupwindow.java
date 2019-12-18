@@ -106,7 +106,7 @@ public class AddShopPopupwindow extends PopupWindow{
             @Override
             public void onClick(View v) {
                 addGoodToCar(shop_img);
-                  addShop();
+                addShop();
 //                ShopDatabase shopDatabase = new ShopDatabase ( view.getContext (),null,1 );
 //                //获取连接
 //                SQLiteDatabase database = shopDatabase.getReadableDatabase ();
@@ -289,7 +289,7 @@ public class AddShopPopupwindow extends PopupWindow{
         db.close();
 
         if(stext!="" && stext.length()>0 && !"".equals(stext) && stext!=null){}
-            //Toast.makeText(view.getContext (),"查询成功",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(view.getContext (),"查询成功",Toast.LENGTH_SHORT).show();
     }
 
     public String Showtext(Cursor cursor){

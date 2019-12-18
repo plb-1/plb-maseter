@@ -34,6 +34,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //得到当前界面的装饰视图
+      /*  if(Build.VERSION.SDK_INT >= 21) {
+            View decorView = getWindow().getDecorView();
+            //让应用主题内容占用系统状态栏的空间,注意:下面两个参数必须一起使用 stable 牢固的
+            int option = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN|View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
+            decorView.setSystemUiVisibility(option);
+            //设置状态栏颜色为透明
+            getWindow().setStatusBarColor(Color.TRANSPARENT);
+           *//* getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            //注意要清除 FLAG_TRANSLUCENT_STATUS flag
+            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            getWindow().setStatusBarColor(getResources().getColor(R.color.orange));*//*
+        }*/
         getWindow().setStatusBarColor(getResources ().getColor ( R.color.colorPrimary ));
         setContentView(R.layout.activity_main);
         initTab();
@@ -58,7 +71,25 @@ public class MainActivity extends AppCompatActivity {
         }
         mTabHost.getTabWidget().setShowDividers(LinearLayout.SHOW_DIVIDER_NONE);
         mTabHost.setCurrentTab(0);
+        int id= getIntent().getIntExtra("id", 0);
+        if(id == 1){
+            mTabHost.setCurrentTab(2);
+        }
+
     }
+
+    /*@Override
+    protected void onRestart() {
+        int id= getIntent().getIntExtra("id", 0);
+        if(id == 1){
+            *//*TabHost.TabSpec tabSpec = mTabHost.newTabSpec(getString(tab.getTitle()));
+            tabSpec.setIndicator(buildIndicator(tab));
+            mTabHost.addTab(tabSpec,tab.getFragment(),null);
+            mTabHost.getTabWidget().setShowDividers(LinearLayout.SHOW_DIVIDER_NONE);
+            mTabHost.setCurrentTab(2);*//*
+        }
+        super.onRestart();
+    }*/
 
     private View buildIndicator(Tab tab) {
         View view = mInflater.inflate(R.layout.tab_indicator,null);
@@ -74,11 +105,11 @@ public class MainActivity extends AppCompatActivity {
     public void setContentView(View view) {
         super.setContentView(view);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-             Window window = getWindow();
+            Window window = getWindow();
             //设置修改状态栏
-             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             //设置状态栏的颜色，和你的app主题或者标题栏颜色设置一致就ok了
-             window.setStatusBarColor(getResources().getColor(R.color.orange));
+            window.setStatusBarColor(getResources().getColor(R.color.orange));
         }
     }
 }

@@ -387,14 +387,14 @@ public final class R {
         public static final int secondary_text_default_material_light = 0x7f0500f7;
         public static final int secondary_text_disabled_material_dark = 0x7f0500f8;
         public static final int secondary_text_disabled_material_light = 0x7f0500f9;
-        public static final int switch_thumb_disabled_material_dark = 0x7f050104;
-        public static final int switch_thumb_disabled_material_light = 0x7f050105;
-        public static final int switch_thumb_material_dark = 0x7f050106;
-        public static final int switch_thumb_material_light = 0x7f050107;
-        public static final int switch_thumb_normal_material_dark = 0x7f050108;
-        public static final int switch_thumb_normal_material_light = 0x7f050109;
-        public static final int tooltip_background_dark = 0x7f05010f;
-        public static final int tooltip_background_light = 0x7f050110;
+        public static final int switch_thumb_disabled_material_dark = 0x7f050105;
+        public static final int switch_thumb_disabled_material_light = 0x7f050106;
+        public static final int switch_thumb_material_dark = 0x7f050107;
+        public static final int switch_thumb_material_light = 0x7f050108;
+        public static final int switch_thumb_normal_material_dark = 0x7f050109;
+        public static final int switch_thumb_normal_material_light = 0x7f05010a;
+        public static final int tooltip_background_dark = 0x7f050110;
+        public static final int tooltip_background_light = 0x7f050111;
     }
     public static final class dimen {
         private dimen() {}
@@ -613,8 +613,8 @@ public final class R {
         public static final int notification_template_icon_low_bg = 0x7f07007c;
         public static final int notification_tile_bg = 0x7f07007d;
         public static final int notify_panel_notification_icon_bg = 0x7f07007e;
-        public static final int tooltip_frame_dark = 0x7f070092;
-        public static final int tooltip_frame_light = 0x7f070093;
+        public static final int tooltip_frame_dark = 0x7f070093;
+        public static final int tooltip_frame_light = 0x7f070094;
     }
     public static final class id {
         private id() {}
@@ -698,32 +698,32 @@ public final class R {
         public static final int search_src_text = 0x7f080188;
         public static final int search_voice_btn = 0x7f080189;
         public static final int select_dialog_listview = 0x7f080195;
-        public static final int shortcut = 0x7f0801c0;
-        public static final int spacer = 0x7f0801c6;
-        public static final int split_action_bar = 0x7f0801c7;
-        public static final int src_atop = 0x7f0801ca;
-        public static final int src_in = 0x7f0801cb;
-        public static final int src_over = 0x7f0801cc;
-        public static final int start = 0x7f0801ce;
-        public static final int submenuarrow = 0x7f0801d2;
-        public static final int submit_area = 0x7f0801d3;
-        public static final int tabMode = 0x7f0801da;
-        public static final int tag_transition_group = 0x7f0801db;
-        public static final int tag_unhandled_key_event_manager = 0x7f0801dc;
-        public static final int tag_unhandled_key_listeners = 0x7f0801dd;
-        public static final int text = 0x7f0801f1;
-        public static final int text2 = 0x7f0801f3;
-        public static final int textSpacerNoButtons = 0x7f0801f4;
-        public static final int textSpacerNoTitle = 0x7f0801f5;
-        public static final int time = 0x7f0801fa;
-        public static final int title = 0x7f0801fb;
-        public static final int titleDividerNoCustom = 0x7f0801fc;
-        public static final int title_template = 0x7f0801fe;
-        public static final int top = 0x7f0801ff;
-        public static final int topPanel = 0x7f080200;
-        public static final int uniform = 0x7f080217;
-        public static final int up = 0x7f080218;
-        public static final int wrap_content = 0x7f080226;
+        public static final int shortcut = 0x7f0801c1;
+        public static final int spacer = 0x7f0801c7;
+        public static final int split_action_bar = 0x7f0801c8;
+        public static final int src_atop = 0x7f0801cb;
+        public static final int src_in = 0x7f0801cc;
+        public static final int src_over = 0x7f0801cd;
+        public static final int start = 0x7f0801cf;
+        public static final int submenuarrow = 0x7f0801d3;
+        public static final int submit_area = 0x7f0801d4;
+        public static final int tabMode = 0x7f0801db;
+        public static final int tag_transition_group = 0x7f0801dc;
+        public static final int tag_unhandled_key_event_manager = 0x7f0801dd;
+        public static final int tag_unhandled_key_listeners = 0x7f0801de;
+        public static final int text = 0x7f0801f2;
+        public static final int text2 = 0x7f0801f4;
+        public static final int textSpacerNoButtons = 0x7f0801f5;
+        public static final int textSpacerNoTitle = 0x7f0801f6;
+        public static final int time = 0x7f0801fb;
+        public static final int title = 0x7f0801fc;
+        public static final int titleDividerNoCustom = 0x7f0801fd;
+        public static final int title_template = 0x7f0801ff;
+        public static final int top = 0x7f080200;
+        public static final int topPanel = 0x7f080201;
+        public static final int uniform = 0x7f080218;
+        public static final int up = 0x7f080219;
+        public static final int wrap_content = 0x7f080227;
     }
     public static final class integer {
         private integer() {}
@@ -818,8 +818,8 @@ public final class R {
         public static final int abc_shareactionprovider_share_with = 0x7f0d0024;
         public static final int abc_shareactionprovider_share_with_application = 0x7f0d0025;
         public static final int abc_toolbar_collapse_description = 0x7f0d0026;
-        public static final int search_menu_title = 0x7f0d003c;
-        public static final int status_bar_notification_info_overflow = 0x7f0d0043;
+        public static final int search_menu_title = 0x7f0d003e;
+        public static final int status_bar_notification_info_overflow = 0x7f0d0045;
     }
     public static final class style {
         private style() {}

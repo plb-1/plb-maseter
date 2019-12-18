@@ -469,15 +469,15 @@ public class MyBaseExpandableListAdapter extends BaseExpandableListAdapter {
     public void removeOneGood(int groupPosition, int childPosition) {
         //StoreBean storeBean = (StoreBean) parentMapList.get(groupPosition).get("parentName");
         List<Map<String, Object>> childMapList = childMapList_list.get(groupPosition);
-       // GoodsBean goodsBean = (GoodsBean) childMapList.get(childPosition).get("childName");
+        // GoodsBean goodsBean = (GoodsBean) childMapList.get(childPosition).get("childName");
         childMapList.remove(childPosition);
 
         //通过子项
-       if (childMapList!=null&&childMapList.size()>0){
+        if (childMapList!=null&&childMapList.size()>0){
 
         }else {
-             parentMapList.remove(groupPosition);
-             childMapList_list.remove(groupPosition);//！！！！因为parentMapList和childMapList_list是pos关联的  得保持一致
+            parentMapList.remove(groupPosition);
+            childMapList_list.remove(groupPosition);//！！！！因为parentMapList和childMapList_list是pos关联的  得保持一致
         }
         if (parentMapList != null && parentMapList.size() > 0) {
             onCheckHasGoodsListener.onCheckHasGoods(true);//
@@ -496,13 +496,13 @@ public class MyBaseExpandableListAdapter extends BaseExpandableListAdapter {
                 parentMapList.remove(i);
                 childMapList_list.remove(i);
             }else {
-            List<Map<String, Object>> childMapList = childMapList_list.get(i);
-            for (int j = childMapList.size()-1; j >=0; j--) {//倒过来遍历  remove
-                GoodsBean goodsBean = (GoodsBean) childMapList.get(j).get("childName");
-                if (goodsBean.isChecked()) {
-                    childMapList.remove(j);
+                List<Map<String, Object>> childMapList = childMapList_list.get(i);
+                for (int j = childMapList.size()-1; j >=0; j--) {//倒过来遍历  remove
+                    GoodsBean goodsBean = (GoodsBean) childMapList.get(j).get("childName");
+                    if (goodsBean.isChecked()) {
+                        childMapList.remove(j);
+                    }
                 }
-            }
             }
 
         }
