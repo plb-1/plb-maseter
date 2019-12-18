@@ -50,6 +50,10 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what){
+                case 0:
+                    Toast.makeText(RegisteredActivity.this,"注册成功,正在前往登录...",Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(RegisteredActivity.this,LoginPageActivity.class));
+                    break;
                 case 1:
                     Toast.makeText(RegisteredActivity.this,"手机号码不正确",Toast.LENGTH_SHORT).show();
                     break;
@@ -160,7 +164,7 @@ public class RegisteredActivity extends AppCompatActivity implements View.OnClic
                                 try {
                                     requestContent = NetWorkUtils.get(yzCodeURL, regPhone.getText().toString());
                                     if (requestContent.equals("注册成功")) {
-                                        Toast.makeText(RegisteredActivity.this,"注册成功",Toast.LENGTH_SHORT).show();
+                                        handler.sendEmptyMessage(0);
                                     }
                                 } catch (IOException e) {
                                     e.printStackTrace();

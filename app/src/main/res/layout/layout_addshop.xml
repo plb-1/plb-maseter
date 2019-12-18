@@ -19,13 +19,13 @@
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/shop_name"
-            android:layout_marginTop="25dp"
-            android:textSize="15dp"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/shop_name"
+                android:layout_marginTop="40dp"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/shop_beginSum"
@@ -50,7 +50,7 @@
         android:id="@+id/add_view"
         android:layout_marginTop="10dp"
         android:layout_below="@id/add_shop_ll"
-        android:background="@color/gray"
+        android:background="#f5f5f5"
         android:layout_width="match_parent"
         android:layout_height="1dp"/>
 
@@ -61,70 +61,69 @@
         android:layout_width="match_parent"
         android:gravity="center_vertical"
         android:layout_height="50dp">
-            <LinearLayout
-                android:layout_centerVertical="true"
-                android:orientation="horizontal"
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/orange"
+                android:text="￥"
+                android:textSize="14sp"
                 android:layout_width="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_height="match_parent">
-                <TextView
-                    android:textColor="@color/orange"
-                    android:text="￥"
-                    android:textSize="14sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/shop_Price"
-                    android:textColor="@color/orange"
-                    android:textSize="14sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:id="@+id/shop_Num"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="14sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:id="@+id/shop_buyNum"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@color/orange"
-                    android:textSize="14sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
+            <TextView
+                android:id="@+id/shop_Price"
+                android:textColor="@color/orange"
+                android:textSize="14sp"
                 android:layout_width="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_height="match_parent">
-                <ImageButton
-                    android:id="@+id/delete_shopNum"
-                    android:background="@color/white"
-                    android:layout_marginRight="5dp"
-                    android:src="@mipmap/delete_sum"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
-                    android:gravity="center"
-                    android:background="@drawable/sum_style"
-                    android:id="@+id/shop_Sum"
-                    android:textSize="20dp"
-                    android:layout_width="40dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_height="40dp" />
-                <ImageButton
-                    android:id="@+id/add_shopNum"
-                    android:background="@color/white"
-                    android:src="@mipmap/add_sum"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-             </LinearLayout>
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/shop_Num"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/shop_buyNum"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/orange"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/delete_shopNum"
+                android:background="@mipmap/delete_sum"
+                android:layout_marginRight="8dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/sum_style"
+                android:id="@+id/shop_Sum"
+                android:textSize="18dp"
+                android:layout_width="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="20dp" />
+            <ImageButton
+                android:id="@+id/add_shopNum"
+                android:background="@mipmap/add_sum"
+                android:layout_marginRight="8dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+        </LinearLayout>
 
     </RelativeLayout>
 
@@ -132,10 +131,10 @@
         android:id="@+id/add_view1"
         android:layout_below="@+id/add_ll"
         android:layout_marginTop="0dp"
-        android:background="@color/gray"
+        android:background="#f5f5f5"
         android:layout_width="match_parent"
         android:layout_height="1dp"/>
-    
+
     <RelativeLayout
         android:id="@+id/add_rl"
         android:layout_below="@+id/add_view1"
@@ -168,31 +167,31 @@
         android:layout_marginRight="10dp"
         android:gravity="center_vertical"
         android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/shopcaricon"
-                android:layout_alignParentRight="true"
-                android:src="@mipmap/shopcar"
-                android:layout_width="60dp"
-                android:layout_height="60dp" />
-            <TextView
-                android:id="@+id/shopconunt"
-                android:layout_toLeftOf="@id/shopcaricon"
-                android:text="0"
-                android:gravity="center"
-                android:layout_marginRight="10dp"
-                android:textSize="17sp"
-                android:textColor="@color/black"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp" />
-            <TextView
-                android:layout_toLeftOf="@id/shopconunt"
-                android:text="当前购物车商品数量"
-                android:gravity="center"
-                android:layout_marginRight="10dp"
-                android:textSize="15sp"
-                android:textColor="@color/black"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp" />
+        <ImageView
+            android:id="@+id/shopcaricon"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/shopcar"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/shopconunt"
+            android:layout_toLeftOf="@id/shopcaricon"
+            android:text="0"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_toLeftOf="@id/shopconunt"
+            android:text="当前购物车商品数量"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
     </RelativeLayout>
 
     <Button

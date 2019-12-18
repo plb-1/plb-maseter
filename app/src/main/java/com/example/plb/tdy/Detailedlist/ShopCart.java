@@ -73,7 +73,7 @@ public class ShopCart extends Fragment implements View.OnClickListener {
         expandableListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               // Toast.makeText(context, "click：" + position, Toast.LENGTH_SHORT).show();
+                // Toast.makeText(context, "click：" + position, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -87,7 +87,7 @@ public class ShopCart extends Fragment implements View.OnClickListener {
         id_iv_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // Toast.makeText(context, "click :back", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(context, "click :back", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -169,7 +169,7 @@ public class ShopCart extends Fragment implements View.OnClickListener {
                     }
                 }
                 if(isjisuan)
-                Toast.makeText(context,"结算成功",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context,"结算成功",Toast.LENGTH_SHORT).show();
                 myBaseExpandableListAdapter.removeGoods();
                 myBaseExpandableListAdapter.notifyDataSetChanged();
                 //Toast.makeText(context,Shopname.size()+"--"+Shopbynum.size(),Toast.LENGTH_SHORT).show();
@@ -320,15 +320,15 @@ public class ShopCart extends Fragment implements View.OnClickListener {
 
             parentMap.put("parentName", new StoreBean("" + i, store, false, false));
             if(parentMapList.size()<=0&&list.size()>0)
-            parentMapList.add(parentMap);
+                parentMapList.add(parentMap);
             //提供当前父列的子列数据
             List<Map<String, Object>> childMapList = new ArrayList<Map<String, Object>>();
             for (int j = 0; j < size; j++) {
                 Map<String, Object> childMap = new HashMap<String, Object>();
-                    GoodsBean goodsBean = new GoodsBean(list.get(j).getShopid(), list.get(j).getName(), R.mipmap.example_1, "品牌 食品", list.get(j).getshopprice(),  list.get(j).getshopprice(),list.get(j).getShopbynum(), GoodsBean.STATUS_VALID, false, false);
-                    childMap.put("childName", goodsBean);
-                    childMapList.add(childMap);
-                   // Toast.makeText(context,"f0",Toast.LENGTH_SHORT).show();
+                GoodsBean goodsBean = new GoodsBean(list.get(j).getShopid(), list.get(j).getName(), R.mipmap.example_1, "品牌 食品", list.get(j).getshopprice(),  list.get(j).getshopprice(),list.get(j).getShopbynum(), GoodsBean.STATUS_VALID, false, false);
+                childMap.put("childName", goodsBean);
+                childMapList.add(childMap);
+                // Toast.makeText(context,"f0",Toast.LENGTH_SHORT).show();
             }
             childMapList_list.add(childMapList);
         }

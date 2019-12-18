@@ -1,191 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:orientation="vertical"
-  android:background="#f2ede9">
-  <LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:orientation="horizontal"
-    android:background="#FFF"
-    >
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/whitesmoke">
+  <android.support.constraint.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:background="@color/white"
+      android:padding="5dp"
+      android:layout_gravity="center_vertical"
+      >
     <ImageView
-      android:id="@+id/fanhui2"
-      android:layout_gravity="center"
-      android:layout_width="30dp"
-      android:layout_height="30dp"
-      android:src="@mipmap/fanhuia"
-      />
-    <TextView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:text="设置"
-      android:gravity="center"
-      android:textSize="22sp"
-      android:textColor="#000"
-      />
-  </LinearLayout>
-  <LinearLayout
-    android:layout_marginTop="15dp"
-    android:layout_width="match_parent"
-    android:layout_height="55dp"
-    android:background="#fff"
-    android:orientation="horizontal"
-    >
-    <TextView
-      android:layout_marginLeft="20dp"
-      android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      android:text="账号管理"
-      android:textSize="20sp"
-      android:gravity="center"
-      android:textColor="#000"
-      />
-   <android.support.constraint.ConstraintLayout
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:layout_gravity="center"
-     >
-     <ImageView
-       android:layout_width="30dp"
-       android:layout_height="30dp"
-       android:src="@mipmap/fanhuia1"
-       app:layout_constraintRight_toRightOf="parent"
-       tools:ignore="MissingConstraints" />
-   </android.support.constraint.ConstraintLayout>
-  </LinearLayout>
-
-  <LinearLayout
-    android:layout_marginTop="1dp"
-    android:layout_width="match_parent"
-    android:layout_height="55dp"
-    android:background="#fff"
-    android:orientation="horizontal"
-    >
-    <TextView
-      android:layout_marginLeft="20dp"
-      android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      android:text="账号设置"
-      android:textSize="20sp"
-      android:gravity="center"
-      android:textColor="#000"
-      />
-    <android.support.constraint.ConstraintLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_gravity="center"
-      >
-      <ImageView
+        android:id="@+id/fanhui2"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@mipmap/fanhuia1"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="MissingConstraints" />
+        android:padding="5dp"
+        android:src="@mipmap/setting_back"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="设置"
+        android:gravity="center"
+        android:textSize="18sp"
+        />
+  </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2px"
+        android:background="#dbdbdb"
+        android:layout_marginTop="15dp"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:clickable="true"
+      android:background="@drawable/per_selector"
+      android:orientation="horizontal"
+      >
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="账户与安全"
+        android:gravity="center"
+        />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:padding="5dp"
+          android:src="@mipmap/more"
+          app:layout_constraintRight_toRightOf="parent"/>
     </android.support.constraint.ConstraintLayout>
   </LinearLayout>
 
   <LinearLayout
-    android:layout_marginTop="1dp"
-    android:layout_width="match_parent"
-    android:layout_height="55dp"
-    android:background="#fff"
-    android:orientation="horizontal"
-    >
-    <TextView
-      android:layout_marginLeft="20dp"
-      android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      android:text="账号安全"
-      android:textSize="20sp"
-      android:gravity="center"
-      android:textColor="#000"
-      />
-    <android.support.constraint.ConstraintLayout
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_gravity="center"
+      android:layout_height="40dp"
+      android:clickable="true"
+      android:background="@drawable/per_selector"
+      android:orientation="horizontal"
+      android:layout_marginTop="1dp"
       >
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="隐私"
+        android:gravity="center"
+        />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
       <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@mipmap/fanhuia1"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="MissingConstraints" />
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:padding="5dp"
+          android:src="@mipmap/more"
+          app:layout_constraintRight_toRightOf="parent" />
     </android.support.constraint.ConstraintLayout>
   </LinearLayout>
 
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2px"
+        android:background="#dbdbdb"
+        android:layout_marginTop="15dp"/>
   <LinearLayout
-    android:layout_marginTop="20dp"
-    android:layout_width="match_parent"
-    android:layout_height="55dp"
-    android:background="#fff"
-    android:orientation="horizontal"
-    >
-    <TextView
-      android:layout_marginLeft="20dp"
-      android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      android:text="隐私"
-      android:textSize="20sp"
-      android:gravity="center"
-      android:textColor="#000"
-      />
-    <android.support.constraint.ConstraintLayout
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_gravity="center"
+      android:layout_height="40dp"
+      android:clickable="true"
+      android:background="@drawable/per_selector"
       >
-      <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@mipmap/fanhuia1"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="意见反馈"
+        android:gravity="center"
+        />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:src="@mipmap/more"
+            app:layout_constraintRight_toRightOf="parent" />
     </android.support.constraint.ConstraintLayout>
   </LinearLayout>
   <LinearLayout
-    android:layout_marginTop="1dp"
-    android:layout_width="match_parent"
-    android:layout_height="55dp"
-    android:background="#fff"
-    android:orientation="horizontal"
-    >
-    <TextView
-      android:layout_marginLeft="20dp"
-      android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      android:text="通用"
-      android:textSize="20sp"
-      android:gravity="center"
-      android:textColor="#000"
-      />
-    <android.support.constraint.ConstraintLayout
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_gravity="center"
+      android:layout_height="40dp"
+      android:clickable="true"
+      android:background="@drawable/per_selector"
+      android:layout_marginTop="1dp"
       >
-      <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@mipmap/fanhuia1"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="通用"
+        android:gravity="center"
+        />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:src="@mipmap/more"
+            app:layout_constraintRight_toRightOf="parent" />
     </android.support.constraint.ConstraintLayout>
   </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2px"
+        android:background="#dbdbdb"
+        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:background="@drawable/per_selector"
+        >
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="关于我们"
+            android:gravity="center"
+            />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:src="@mipmap/more"
+                app:layout_constraintRight_toRightOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2px"
+        android:background="#dbdbdb"
+        android:layout_marginTop="15dp"/>
   <TextView
-    android:id="@+id/tuichu1"
-    android:layout_marginTop="20dp"
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:text="退出账户"
-    android:textColor="#fff"
-    android:textSize="20sp"
-    android:gravity="center"
-    android:background="#E16371"
-    />
+      android:id="@+id/tuichu1"
+      android:layout_width="match_parent"
+      android:layout_height="42dp"
+      android:text="退出当前账号"
+      android:textSize="16sp"
+      android:gravity="center"
+      android:textColor="@color/goldyellow"
+      android:clickable="true"
+      android:background="@drawable/per_selector"
+      />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2px"
+        android:background="#dbdbdb"/>
 </LinearLayout>

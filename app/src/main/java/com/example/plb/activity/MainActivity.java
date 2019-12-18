@@ -71,7 +71,25 @@ public class MainActivity extends AppCompatActivity {
         }
         mTabHost.getTabWidget().setShowDividers(LinearLayout.SHOW_DIVIDER_NONE);
         mTabHost.setCurrentTab(0);
+        int id= getIntent().getIntExtra("id", 0);
+        if(id == 1){
+            mTabHost.setCurrentTab(2);
+        }
+
     }
+
+    /*@Override
+    protected void onRestart() {
+        int id= getIntent().getIntExtra("id", 0);
+        if(id == 1){
+            *//*TabHost.TabSpec tabSpec = mTabHost.newTabSpec(getString(tab.getTitle()));
+            tabSpec.setIndicator(buildIndicator(tab));
+            mTabHost.addTab(tabSpec,tab.getFragment(),null);
+            mTabHost.getTabWidget().setShowDividers(LinearLayout.SHOW_DIVIDER_NONE);
+            mTabHost.setCurrentTab(2);*//*
+        }
+        super.onRestart();
+    }*/
 
     private View buildIndicator(Tab tab) {
         View view = mInflater.inflate(R.layout.tab_indicator,null);
@@ -87,11 +105,11 @@ public class MainActivity extends AppCompatActivity {
     public void setContentView(View view) {
         super.setContentView(view);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-             Window window = getWindow();
+            Window window = getWindow();
             //设置修改状态栏
-             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             //设置状态栏的颜色，和你的app主题或者标题栏颜色设置一致就ok了
-             window.setStatusBarColor(getResources().getColor(R.color.orange));
+            window.setStatusBarColor(getResources().getColor(R.color.orange));
         }
     }
 }

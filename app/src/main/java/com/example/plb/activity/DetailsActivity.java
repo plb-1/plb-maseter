@@ -1,8 +1,10 @@
 package com.example.plb.activity;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.annotation.NonNull;
@@ -26,6 +28,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,19 +42,20 @@ import com.example.plb.fragment.DetailsShopFragment;
 
 
 public class DetailsActivity extends AppCompatActivity implements View.OnClickListener {
-//    private DetailsShopFragment fragmentShop;
+    //    private DetailsShopFragment fragmentShop;
 //    private DetailsDetailsFragment fragmentDetails;
     //private TextView textView1,textView2;
-    private ImageView imageView;
-    private ImageButton imageButton;
+    private ImageView imageView,ib_back;
     private RecyclerView rv_home;
     private AddShopPopupwindow mPopwindow;
     private TextView shop;
     private CheckBox checkBox;//关注
     public static boolean checkd;
     private Button add_shop;//加入进货单
+    private LinearLayout shop_cart;
     ShopBean shopBean = new ShopBean ();
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
@@ -70,11 +74,13 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
         textView2 = findViewById ( R.id.tvTwo );*/
         imageView = findViewById ( R.id.iv_shop );
         shop = findViewById(R.id.shop);
-        imageButton = findViewById ( R.id.ib_back );
+        ib_back = findViewById ( R.id.ib_back );
         add_shop = findViewById(R.id.add_shop);
 
         rv_home = findViewById(R.id.rv_home);
         checkBox = findViewById(R.id.checkbox);
+        shop_cart = findViewById(R.id.shop_cart);
+        shop_cart.setOnClickListener(this);
         //initDate();
 
         DetailAdapter adapter = new DetailAdapter(DetailsActivity.this);
@@ -83,21 +89,21 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
         manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
             @Override
             public int getSpanSize(int position) {
-               if(position == 0){
+                if(position == 0){
                     shop.setText("商品");
                 }else if(position == 1){
                     shop.setText("详情");
                 }
                 return 1;
-           }
+            }
         });
         rv_home.setAdapter(adapter);
         rv_home.setLayoutManager(manager);
-       // rv_home.setLayoutManager(new LinearLayoutManager(DetailsActivity.this));
+        // rv_home.setLayoutManager(new LinearLayoutManager(DetailsActivity.this));
         /*textView1.setOnClickListener ( this );
         textView2.setOnClickListener ( this );*/
         imageView.setOnClickListener ( this );
-        imageButton.setOnClickListener ( this );
+        ib_back.setOnClickListener ( this );
         add_shop.setOnClickListener(this);
 
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -112,7 +118,7 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
                 }
             }
         });
-       //FragmentManager fragmentManager = getSupportFragmentManager ();
+        //FragmentManager fragmentManager = getSupportFragmentManager ();
         //FragmentTransaction transaction = fragmentManager.beginTransaction ();
         //transaction.replace ( R.id.rl_shop,fragmentShop );
         //transaction.commit ();
@@ -137,6 +143,11 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
                 textView2.setTextColor ( getResources ().getColor ( R.color.orange ) );
                 textView1.setTextColor ( getResources ().getColor ( R.color.black ) );
                 break;*/
+            case R.id.shop_cart:
+                Intent intent = new Intent(DetailsActivity.this,MainActivity.class);
+                intent.putExtra("id", 1);
+                startActivity(intent);
+                break;
             case R.id.add_shop:
                 mPopwindow = new AddShopPopupwindow(DetailsActivity.this, null);
                 mPopwindow.showAtLocation(v, Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
@@ -148,7 +159,7 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
                 finish ();
                 break;
         }
-       // transaction.commit ();
+        // transaction.commit ();
     }
 
     //状态栏菜单

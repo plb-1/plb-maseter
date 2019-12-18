@@ -20,6 +20,9 @@ import com.example.plb.Utils.NetWorkUtils;
 import com.example.plb.bean.UserInfo;
 import com.gyf.immersionbar.ImmersionBar;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -57,10 +60,13 @@ public class LoginPageActivity extends AppCompatActivity implements View.OnClick
                     loginPassword.setText("");
                     startActivity(new Intent(LoginPageActivity.this, MainActivity.class));
                     break;
+                case 2:
+                    Toast.makeText(LoginPageActivity.this,"登录失败，请仔细检查用户名密码是否输入正确",Toast.LENGTH_SHORT).show();
+                    break;
             }
         }
     };
-    private UserInfo userInfo;
+    private UserInfo userInfo = UserInfo.getInstance();;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,13 +87,21 @@ public class LoginPageActivity extends AppCompatActivity implements View.OnClick
                         String loginRrequset = null;
                         loginRrequset = NetWorkUtils.get(loginURL,sharedPreferences.getString("USER_NAME","")+"/"+sharedPreferences.getString("PASEE_WORD",""));
                         Log.e(TAG, "loginBtnClick: AutoLoginRrequset ---> "+loginRrequset );
-                        Log.e(TAG, "loginBtnClick: AutoLoginloginURL ---> "+loginURL+ sharedPreferences.getString("USER_NAME","")+"/"+sharedPreferences.getString("PASEE_WORD",""));
 
                         if ("".equals(loginRrequset)) {
                         }else {
+                            //解析json数据存入UserInfo类中
+                            JSONObject jsonObject = new JSONObject(loginRrequset);
+                            userInfo.setUserName(jsonObject.getString("userName"));
+                            userInfo.setPassWord(jsonObject.getString("password"));
+                            userInfo.setUserImg(jsonObject.getString("images"));
+                            userInfo.setUserId(jsonObject.getInt("id"));
+
                             handler.sendEmptyMessage(0);
                         }
                     } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
@@ -139,12 +153,20 @@ public class LoginPageActivity extends AppCompatActivity implements View.OnClick
                                     spEdittor.putBoolean("IS_AUTO_LOGIN",true);
                                     spEdittor.commit();
 
+                                    //解析Json数据放入Bean类中
+                                    JSONObject jsonObject = new JSONObject(loginRrequset);
+                                    userInfo.setUserName(jsonObject.getString("userName"));
+                                    userInfo.setPassWord(jsonObject.getString("password"));
+                                    userInfo.setUserImg(jsonObject.getString("userImage"));
+
                                     handler.sendEmptyMessage(1);
                                     finish();
                                 }else {
-                                    Toast.makeText(LoginPageActivity.this,"登录失败，请仔细检查用户名密码是否输入正确",Toast.LENGTH_SHORT).show();
+                                   handler.sendEmptyMessage(2);
                                 }
                             } catch (IOException e) {
+                                e.printStackTrace();
+                            } catch (JSONException e) {
                                 e.printStackTrace();
                             }
                         }

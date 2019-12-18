@@ -1,7 +1,7 @@
-#Tue Dec 17 19:50:29 CST 2019
-base.0=E\:\\Git\\git Help\\plb-maseter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Wed Dec 18 09:33:02 CST 2019
+base.0=E\:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=E\:\\Git\\git Help\\plb-maseter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+base.1=E\:\\MyApp\\PLT-master\\PLT-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1

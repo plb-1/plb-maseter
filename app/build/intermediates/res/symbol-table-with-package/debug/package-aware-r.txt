@@ -87,6 +87,13 @@ attr buttonStyleSmall
 attr buttonSubBackgroud
 attr buttonTint
 attr buttonTintMode
+attr cardBackgroundColor
+attr cardCornerRadius
+attr cardElevation
+attr cardMaxElevation
+attr cardPreventCornerOverlap
+attr cardUseCompatPadding
+attr cardViewStyle
 attr chainUseRtl
 attr checkboxStyle
 attr checkedTextViewStyle
@@ -120,6 +127,11 @@ attr contentInsetLeft
 attr contentInsetRight
 attr contentInsetStart
 attr contentInsetStartWithNavigation
+attr contentPadding
+attr contentPaddingBottom
+attr contentPaddingLeft
+attr contentPaddingRight
+attr contentPaddingTop
 attr controlBackground
 attr coordinatorLayoutStyle
 attr customNavigationLayout
@@ -435,6 +447,10 @@ color burlywood
 color button_material_dark
 color button_material_light
 color cadetblue
+color cardview_dark_background
+color cardview_light_background
+color cardview_shadow_end_color
+color cardview_shadow_start_color
 color chartreuse
 color chocolate
 color colorAccent
@@ -616,6 +632,7 @@ color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
 color selector_tab_text
+color setting_title
 color sienna
 color silver
 color skyblue
@@ -728,6 +745,9 @@ dimen activity_vertical_margin
 dimen basicPaddingSize
 dimen bigButtonTextSize
 dimen buttonCornerSize
+dimen cardview_compat_inset_shadow
+dimen cardview_default_elevation
+dimen cardview_default_radius
 dimen category_layout_width
 dimen compat_button_inset_horizontal_material
 dimen compat_button_inset_vertical_material
@@ -942,6 +962,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable per_selector
 drawable reg_yzcode_ll_bg
 drawable reg_yzcode_ll_gray_bg
 drawable search_home
@@ -1145,7 +1166,6 @@ id ib_back
 id icon
 id icon_group
 id icon_tab
-id id_Bypayment
 id id_LinearLayout_1
 id id_LinearLayout_2
 id id_cb_select_all
@@ -1272,7 +1292,20 @@ id payment_btn
 id payment_money
 id payment_wechat
 id payment_zyb
+id per_order
+id per_top
 id percent
+id personal_all_order
+id personal_daifahuo
+id personal_daifukuan
+id personal_head_portrait
+id personal_help
+id personal_setting
+id personal_shipping_address
+id personal_shouhuo
+id personal_store_collection
+id personal_user_id
+id personal_user_name
 id phone
 id pingpai
 id popupwindow_btn
@@ -1321,11 +1354,7 @@ id right
 id right_icon
 id right_menu_gridview
 id right_side
-id rl_dataManagement
-id rl_myOrder
 id rl_parameter
-id rl_setting
-id rl_subscription
 id rl_title
 id round
 id rv_home
@@ -1369,6 +1398,7 @@ id shop_Sum
 id shop_address
 id shop_beginSum
 id shop_buyNum
+id shop_cart
 id shop_details_iv
 id shop_details_rl
 id shop_image1_home
@@ -1683,6 +1713,9 @@ mipmap close
 mipmap code
 mipmap common
 mipmap completed
+mipmap daifahuo
+mipmap daifukuan
+mipmap daishouhuo
 mipmap datamanagement
 mipmap delete_sum
 mipmap deleteicon
@@ -1777,8 +1810,13 @@ mipmap paid
 mipmap partingline
 mipmap password
 mipmap pay
+mipmap personal
 mipmap po_jie
 mipmap position
+mipmap pre_collection
+mipmap pre_help
+mipmap pre_id
+mipmap pre_position
 mipmap putaogan
 mipmap pwd
 mipmap qian
@@ -1804,6 +1842,7 @@ mipmap sel_check
 mipmap sel_nor
 mipmap service
 mipmap setting
+mipmap setting_back
 mipmap shaixuan
 mipmap shezhi
 mipmap shizhong_home
@@ -1914,6 +1953,8 @@ string market2
 string myOrder
 string order
 string payment
+string per_user_id
+string per_user_name
 string personal
 string price
 string search_menu_title
@@ -1939,6 +1980,7 @@ style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
 style Base_Animation_AppCompat_DropDownUp
 style Base_Animation_AppCompat_Tooltip
+style Base_CardView
 style Base_DialogWindowTitle_AppCompat
 style Base_DialogWindowTitleBackground_AppCompat
 style Base_TextAppearance_AppCompat
@@ -2089,6 +2131,9 @@ style Base_Widget_AppCompat_Spinner_Underlined
 style Base_Widget_AppCompat_TextView_SpinnerItem
 style Base_Widget_AppCompat_Toolbar
 style Base_Widget_AppCompat_Toolbar_Button_Navigation
+style CardView
+style CardView_Dark
+style CardView_Light
 style CheckBoXTheme
 style CustomCheckboxTheme
 style MyCheckBox
@@ -2305,6 +2350,7 @@ styleable AppCompatTextHelper android_textAppearance android_drawableTop android
 styleable AppCompatTextView android_textAppearance autoSizeMaxTextSize autoSizeMinTextSize autoSizePresetSizes autoSizeStepGranularity autoSizeTextType firstBaselineToTopHeight fontFamily lastBaselineToBottomHeight lineHeight textAllCaps
 styleable AppCompatTheme android_windowIsFloating android_windowAnimationStyle actionBarDivider actionBarItemBackground actionBarPopupTheme actionBarSize actionBarSplitStyle actionBarStyle actionBarTabBarStyle actionBarTabStyle actionBarTabTextStyle actionBarTheme actionBarWidgetTheme actionButtonStyle actionDropDownStyle actionMenuTextAppearance actionMenuTextColor actionModeBackground actionModeCloseButtonStyle actionModeCloseDrawable actionModeCopyDrawable actionModeCutDrawable actionModeFindDrawable actionModePasteDrawable actionModePopupWindowStyle actionModeSelectAllDrawable actionModeShareDrawable actionModeSplitBackground actionModeStyle actionModeWebSearchDrawable actionOverflowButtonStyle actionOverflowMenuStyle activityChooserViewStyle alertDialogButtonGroupStyle alertDialogCenterButtons alertDialogStyle alertDialogTheme autoCompleteTextViewStyle borderlessButtonStyle buttonBarButtonStyle buttonBarNegativeButtonStyle buttonBarNeutralButtonStyle buttonBarPositiveButtonStyle buttonBarStyle buttonStyle buttonStyleSmall checkboxStyle checkedTextViewStyle colorAccent colorBackgroundFloating colorButtonNormal colorControlActivated colorControlHighlight colorControlNormal colorError colorPrimary colorPrimaryDark colorSwitchThumbNormal controlBackground dialogCornerRadius dialogPreferredPadding dialogTheme dividerHorizontal dividerVertical dropDownListViewStyle dropdownListPreferredItemHeight editTextBackground editTextColor editTextStyle homeAsUpIndicator imageButtonStyle listChoiceBackgroundIndicator listDividerAlertDialog listMenuViewStyle listPopupWindowStyle listPreferredItemHeight listPreferredItemHeightLarge listPreferredItemHeightSmall listPreferredItemPaddingLeft listPreferredItemPaddingRight panelBackground panelMenuListTheme panelMenuListWidth popupMenuStyle popupWindowStyle radioButtonStyle ratingBarStyle ratingBarStyleIndicator ratingBarStyleSmall searchViewStyle seekBarStyle selectableItemBackground selectableItemBackgroundBorderless spinnerDropDownItemStyle spinnerStyle switchStyle textAppearanceLargePopupMenu textAppearanceListItem textAppearanceListItemSecondary textAppearanceListItemSmall textAppearancePopupMenuHeader textAppearanceSearchResultSubtitle textAppearanceSearchResultTitle textAppearanceSmallPopupMenu textColorAlertDialogListItem textColorSearchUrl toolbarNavigationButtonStyle toolbarStyle tooltipForegroundColor tooltipFrameBackground viewInflaterClass windowActionBar windowActionBarOverlay windowActionModeOverlay windowFixedHeightMajor windowFixedHeightMinor windowFixedWidthMajor windowFixedWidthMinor windowMinWidthMajor windowMinWidthMinor windowNoTitle
 styleable ButtonBarLayout allowStacking
+styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable ColorStateListItem android_color android_alpha alpha
 styleable CompoundButton android_button buttonTint buttonTintMode

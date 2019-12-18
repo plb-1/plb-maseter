@@ -9,8 +9,8 @@ import android.widget.TextView;
 import com.example.plb.R;
 
 public class SettingActivity extends AppCompatActivity{
-ImageView fanhui1;
-TextView textView;
+    ImageView fanhui1;
+    TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,21 +19,21 @@ TextView textView;
     }
 
     private void init() {
-      fanhui1 =findViewById(R.id.fanhui2);
-      textView=findViewById(R.id.tuichu1);
-      textView.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-        }
-      });
+        fanhui1 =findViewById(R.id.fanhui2);
+        textView=findViewById(R.id.tuichu1);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
 
 
-     fanhui1.setOnClickListener(new View.OnClickListener() {
-       @Override
-       public void onClick(View v) {
-         finish();
-       }
-     });
+        fanhui1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
 }
